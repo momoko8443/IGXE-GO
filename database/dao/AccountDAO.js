@@ -3,14 +3,11 @@ var Lowdb = require('lowdb');
 function AccountDAO(){
     this.db = new Lowdb('database/account.json');
 
-    this.findAccount = function(){
-        return this.db.get('account').value();
-    };
     this.getSteamAccount = function(){
-        return this.findAccount().steam;
+        return this.db.get('steam').value();
     };
     this.getSMTPAccount = function(){
-        return this.findAccount().smtp;
+        return this.db.get('smtp').value();
     };
 }
 var accountDAO = new AccountDAO();
