@@ -1,0 +1,306 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/my.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/ukulelejs/dist/uku.js"></script>
+</head>
+
+<body uku-application>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+
+
+        </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>IGXE cs-go 1.0</h1>
+            <p>Automation tool for searching low price weapons from IGXE, for ZUSIDA&MOMOKO internal use only.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 pull-right">
+                <a class="btn btn-success" href="javascript:;" role="button" uku-onclick="mainCtrl.addWeapon()">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>任务
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-hover">
+                    <caption>任务列表</caption>
+                    <thead>
+                        <tr>
+                            <th>武器</th>
+                            <th>关键字</th>
+                            <th>稀有度</th>
+                            <th>磨损值</th>
+                            <th>StatTrak</th>
+                            <th>印花</th>
+                            <th>警示价</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr uku-repeat="task in mainCtrl.tasks">
+                            <td>{{task.weapon.name}}</td>
+                            <td>{{task.keyword}}</td>
+                            <td>{{task.rarity.name}}</td>
+                            <td>{{task.exterior.name}}</td>
+                            <td>{{task.isStatTrak}}</td>
+                            <td>{{task.isSticker}}</td>
+                            <td>{{task.maxPrice}}</td>
+                            <td>
+                                <a class="btn btn-default btn-sm" href="javascript:;" role="button" uku-render="parent.mainCtrl.iconStatus(task.isRunning)" uku-onclick="parent.mainCtrl.runOrStopTask(task)">
+                                    <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                                </a>
+                                <a class="btn btn-default btn-sm" href="javascript:;" role="button" uku-render="task.isRunning" uku-onclick="parent.mainCtrl.runOrStopTask(task)">
+                                    <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+                                </a>
+                                 <a class="btn btn-default btn-sm" href="javascript:;" role="button" uku-onclick="parent.mainCtrl.removeTask(task)">
+                                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                </a>
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br>
+        <footer>
+            <p>Powered by Ukulele.js</p>
+        </footer>
+    </div>
+    <!-- /container -->
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">添加任务</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label>武器</label>
+                            <select class="form-control" uku-selected="mainCtrl.currentTask.selectedOption|value" uku-onchange="mainCtrl.selectedOptionChanged()">
+                                <option uku-repeat="option in mainCtrl.options"
+                                            uku-value="option.value" uku-data-item="option">{{option.name}}</option>
+                            </select>
+                            <br/>
+                            <select class="form-control" uku-selected="mainCtrl.currentTask.selectedChildOption|name">
+                                <option uku-repeat="child in mainCtrl.currentTask.selectedOption.children"
+                                            uku-value="child.name" uku-data-item="child">{{child.name}}</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputKeyword">关键字</label>
+                            <input type="text" class="form-control" id="inputKeyword" placeholder="例：燃料喷射器 卡特尔" uku-value="mainCtrl.currentTask.keyword">
+                        </div>
+                        <div class="form-group">
+                            <label>稀有度</label>
+                            <select class="form-control" uku-selected="mainCtrl.currentTask.selectedOption_1|value">
+                                <option uku-repeat="option in mainCtrl.options_1"
+                                            uku-value="option.value" uku-data-item="option">{{option.name}}</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>磨损值</label>
+                            <select class="form-control" uku-selected="mainCtrl.currentTask.selectedOption_2|value">
+                                <option uku-repeat="option in mainCtrl.options_2"
+                                            uku-value="option.value" uku-data-item="option">{{option.name}}</option>
+                            </select>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" uku-value="mainCtrl.currentTask.isStatTrak"> StatTrak
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" uku-value="mainCtrl.currentTask.isSticker"> 印花
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputFile">警示价（低于）</label>
+                            <input type="number" class="form-control" uku-value="mainCtrl.currentTask.maxPrice">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputFile">被通知人</label>
+
+                            <div class="checkbox" uku-repeat="receiver in mainCtrl.options_3">
+                                <label>
+                                    <input type="checkbox" uku-text="receiver.name" uku-value="receiver.isPicked"> 
+                                    <span>{{receiver.mail}}</span>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" uku-onclick="mainCtrl.createTask()">确定</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+</body>
+<script>
+    var uku = new Ukulele();
+    var mainCtrl = new MainController(uku);
+    uku.registerController('mainCtrl', mainCtrl);
+    uku.addListener(Ukulele.INITIALIZED, function (e) {
+        $.get('/api/baseinfo', function (result) {
+            mainCtrl.init(result);
+        });
+
+    });
+    uku.init();
+
+
+    function MainController(uku) {
+        var self = this;
+        this.options = [];
+        this.options_1 = [];
+        this.options_2 = [];
+        this.options_3 = [];
+        this.currentTask = {};
+        this.currentTask.selectedOption = {};
+        this.currentTask.selectedOption_1 = {};
+        this.currentTask.selectedOption_2 = {};
+        this.currentTask.selectedOption_3 = {};
+        this.currentTask.selectedChildOption = {};
+        this.tasks = [];
+        this.init = function (data) {
+            this.options = data.weapons;
+            this.options_1 = data.rarities;
+            this.options_2 = data.exteriors;
+            this.options_3 = data.receivers;
+
+            this.getTasks();
+            uku.refresh('mainCtrl');
+        };
+        this.addWeapon = function () {
+            $('#myModal').modal('toggle');
+            //this.currentTask = task;
+            this.currentTask = {};
+            this.currentTask.selectedOption = this.options[0];
+            this.currentTask.selectedOption_1 = this.options_1[0];
+            this.currentTask.selectedOption_2 = this.options_2[0];
+            this.currentTask.selectedOption_3 = this.options_3[0];
+            this.options_3.forEach(function (receiver) {
+                receiver.isPicked = false;
+            });
+            this.currentTask.selectedChildOption = this.currentTask.selectedOption.children[0];
+            this.currentTask.keyword = "";
+            this.currentTask.isStatTrak = false;
+            this.currentTask.isSticker = false;
+            this.currentTask.maxPrice = 299;
+            uku.refresh('mainCtrl');
+        };
+
+        this.selectedOptionChanged = function () {
+            this.currentTask.selectedChildOption = this.currentTask.selectedOption.children[0];
+            uku.refresh();
+        };
+
+        this.getTasks = function () {
+            $.get('/api/tasks', function (tasks) {
+                self.tasks = tasks;
+                uku.refresh('mainCtrl');
+            })
+        };
+
+        this.getTaskInfo = function (task) {
+            var info = '';
+            if (task) {
+                info = task.weapon.name + '|'
+                    + task.keyword + '|'
+                    + task.rarity.name + '|'
+                    + task.exterior.name + '|';
+                if (task.isStatTrak) {
+                    info += 'StatTrak |';
+                }
+                if (task.isSticker) {
+                    info += '印花' + '|';
+                }
+                info += '警示价:' + task.maxPrice + '|';
+            }
+
+            return info;
+        };
+
+        this.removeTask = function(task){
+            $.ajax({
+                url: '/api/tasks/'+task._id,
+                method: 'DELETE',
+                success: function () {
+                    self.getTasks();
+                }
+            });
+        };
+        
+        this.iconStatus = function(isRunning){
+            return !isRunning;
+        }
+
+        this.runOrStopTask = function(task){
+            $.ajax({
+                url: '/api/tasks/'+task._id,
+                method: 'PATCH',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                data: JSON.stringify({_id:task._id,isRunning:!task.isRunning}),
+                success: function () {
+                    self.getTasks();
+                }
+            });
+        }
+
+        this.createTask = function () {
+            var task = {};
+            task.keyword = this.currentTask.keyword;
+            task.weapon = this.currentTask.selectedChildOption;
+            task.rarity = this.currentTask.selectedOption_1;
+            task.exterior = this.currentTask.selectedOption_2;
+            task.maxPrice = this.currentTask.maxPrice;
+            task.isStatTrak = this.currentTask.isStatTrak;
+            task.isSticker = this.currentTask.isSticker;
+            task.receivers = [];
+            task.isRunning = true;
+            this.options_3.forEach(function (receiver) {
+                if (receiver.isPicked) {
+                    task.receivers.push(receiver);
+                }
+            });
+
+            $.ajax({
+                url: '/api/tasks',
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                data: JSON.stringify(task),
+                success: function () {
+                    $('#myModal').modal('toggle');
+                    self.getTasks();
+                }
+            });
+        }
+    }
+
+</script>
+
+</html>

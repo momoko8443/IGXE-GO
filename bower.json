@@ -1,0 +1,22 @@
+{
+  "name": "igxe-go",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Jake Zheng <momoko8443@163.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "ukulelejs": "^1.2.9"
+  }
+}

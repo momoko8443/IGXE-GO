@@ -1,0 +1,265 @@
+{
+  "tasks": [
+    {
+      "keyword": "前线迷雾",
+      "weapon": {
+        "name": "AK-47",
+        "value": "/csgo/search/4_27",
+        "_alias": "child"
+      },
+      "rarity": {
+        "name": "请选择",
+        "value": "",
+        "_alias": "option"
+      },
+      "exterior": {
+        "name": "崭新出厂",
+        "value": "589",
+        "_alias": "option"
+      },
+      "maxPrice": "480",
+      "isStatTrak": true,
+      "isSticker": false,
+      "receivers": [
+        {
+          "name": "zusida",
+          "mail": "zusida@126.com",
+          "_alias": "receiver",
+          "isPicked": true
+        },
+        {
+          "name": "momoko",
+          "mail": "momoko8443@163.com",
+          "_alias": "receiver",
+          "isPicked": true
+        }
+      ],
+      "isRunning": true,
+      "_id": "BykqI1SHb",
+      "result": [
+        {
+          "price": "489.00",
+          "href": "https://www.igxe.cn/product-93820899"
+        },
+        {
+          "price": "490.00",
+          "href": "https://www.igxe.cn/product-90840946"
+        },
+        {
+          "price": "495.00",
+          "href": "https://www.igxe.cn/product-90769657"
+        },
+        {
+          "price": "508.00",
+          "href": "https://www.igxe.cn/product-91338038"
+        },
+        {
+          "price": "510.00",
+          "href": "https://www.igxe.cn/product-80162274"
+        },
+        {
+          "price": "510.00",
+          "href": "https://www.igxe.cn/product-93091423"
+        },
+        {
+          "price": "530.00",
+          "href": "https://www.igxe.cn/product-94035407"
+        },
+        {
+          "price": "550.00",
+          "href": "https://www.igxe.cn/product-89884729"
+        },
+        {
+          "price": "670.00",
+          "href": "https://www.igxe.cn/product-62834318"
+        },
+        {
+          "price": "688.00",
+          "href": "https://www.igxe.cn/product-87763209"
+        },
+        {
+          "price": "700.00",
+          "href": "https://www.igxe.cn/product-76513445"
+        },
+        {
+          "price": "750.00",
+          "href": "https://www.igxe.cn/product-91279429"
+        }
+      ]
+    },
+    {
+      "keyword": "次时代",
+      "weapon": {
+        "name": "M4A1 消音版",
+        "value": "/csgo/search/4_26",
+        "_alias": "child"
+      },
+      "rarity": {
+        "name": "请选择",
+        "value": "",
+        "_alias": "option"
+      },
+      "exterior": {
+        "name": "略有磨损",
+        "value": "615",
+        "_alias": "option"
+      },
+      "maxPrice": "180",
+      "isStatTrak": true,
+      "isSticker": false,
+      "receivers": [
+        {
+          "name": "zusida",
+          "mail": "zusida@126.com",
+          "_alias": "receiver",
+          "isPicked": true
+        },
+        {
+          "name": "momoko",
+          "mail": "momoko8443@163.com",
+          "_alias": "receiver",
+          "isPicked": true
+        }
+      ],
+      "isRunning": true,
+      "_id": "BJM2Ukrr-",
+      "result": [
+        {
+          "price": "187.50",
+          "href": "https://www.igxe.cn/product-93314385"
+        },
+        {
+          "price": "191.50",
+          "href": "https://www.igxe.cn/product-91664254"
+        },
+        {
+          "price": "192.50",
+          "href": "https://www.igxe.cn/product-90120493"
+        },
+        {
+          "price": "194.80",
+          "href": "https://www.igxe.cn/product-88632509"
+        },
+        {
+          "price": "197.00",
+          "href": "https://www.igxe.cn/product-88464172"
+        },
+        {
+          "price": "200.00",
+          "href": "https://www.igxe.cn/product-92481071"
+        },
+        {
+          "price": "215.00",
+          "href": "https://www.igxe.cn/product-88504242"
+        },
+        {
+          "price": "215.00",
+          "href": "https://www.igxe.cn/product-90983881"
+        },
+        {
+          "price": "235.00",
+          "href": "https://www.igxe.cn/product-86922342"
+        },
+        {
+          "price": "240.00",
+          "href": "https://www.igxe.cn/product-89061881"
+        },
+        {
+          "price": "241.23",
+          "href": "https://www.igxe.cn/product-92576734"
+        },
+        {
+          "price": "250.00",
+          "href": "https://www.igxe.cn/product-91351808"
+        }
+      ]
+    },
+    {
+      "keyword": "炎龙之焰",
+      "weapon": {
+        "name": "SSG 08",
+        "value": "/csgo/search/4_31",
+        "_alias": "child"
+      },
+      "rarity": {
+        "name": "请选择",
+        "value": "",
+        "_alias": "option"
+      },
+      "exterior": {
+        "name": "崭新出厂",
+        "value": "589",
+        "_alias": "option"
+      },
+      "maxPrice": "550",
+      "isStatTrak": true,
+      "isSticker": false,
+      "receivers": [
+        {
+          "name": "zusida",
+          "mail": "zusida@126.com",
+          "_alias": "receiver",
+          "isPicked": true
+        },
+        {
+          "name": "momoko",
+          "mail": "momoko8443@163.com",
+          "_alias": "receiver",
+          "isPicked": true
+        }
+      ],
+      "isRunning": true,
+      "_id": "HJGgDyBBW",
+      "result": [
+        {
+          "price": "521.00",
+          "href": "https://www.igxe.cn/product-94030670"
+        },
+        {
+          "price": "530.00",
+          "href": "https://www.igxe.cn/product-94003626"
+        },
+        {
+          "price": "553.50",
+          "href": "https://www.igxe.cn/product-90796087"
+        },
+        {
+          "price": "553.50",
+          "href": "https://www.igxe.cn/product-90796088"
+        },
+        {
+          "price": "554.00",
+          "href": "https://www.igxe.cn/product-89498784"
+        },
+        {
+          "price": "554.00",
+          "href": "https://www.igxe.cn/product-89498785"
+        },
+        {
+          "price": "554.00",
+          "href": "https://www.igxe.cn/product-89498788"
+        },
+        {
+          "price": "555.00",
+          "href": "https://www.igxe.cn/product-91870797"
+        },
+        {
+          "price": "573.00",
+          "href": "https://www.igxe.cn/product-91662224"
+        },
+        {
+          "price": "581.00",
+          "href": "https://www.igxe.cn/product-93544296"
+        },
+        {
+          "price": "600.00",
+          "href": "https://www.igxe.cn/product-82894729"
+        },
+        {
+          "price": "615.55",
+          "href": "https://www.igxe.cn/product-90752492"
+        }
+      ]
+    }
+  ]
+}

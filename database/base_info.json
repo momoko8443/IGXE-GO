@@ -1,0 +1,352 @@
+{
+    "weapons": [
+        {
+            "name": "手枪",
+            "value": "/csgo/search/1_0",
+            "children": [
+                {
+                    "name": "P2000",
+                    "value": "/csgo/search/1_1"
+                },
+                {
+                    "name": "USP 消音版",
+                    "value": "/csgo/search/1_2"
+                },
+                {
+                    "name": "格洛克18型",
+                    "value": "/csgo/search/1_3"
+                },
+                {
+                    "name": "P250",
+                    "value": "/csgo/search/1_4"
+                },
+                {
+                    "name": "FN57",
+                    "value": "/csgo/search/1_5"
+                },
+                {
+                    "name": "CZ75 自动手枪",
+                    "value": "/csgo/search/1_6"
+                },
+                {
+                    "name": "沙漠之鹰",
+                    "value": "/csgo/search/1_7"
+                },
+                {
+                    "name": "Tec-9",
+                    "value": "/csgo/search/1_8"
+                },
+                {
+                    "name": "R8 左轮手枪",
+                    "value": "/csgo/search/1_9"
+                },
+                {
+                    "name": "双持贝瑞塔",
+                    "value": "/csgo/search/1_10"
+                }
+            ]
+        },
+        {
+            "name": "重型武器 ",
+            "value": "/csgo/search/2_0",
+            "children": [
+                {
+                    "name": "Nova",
+                    "value": "/csgo/search/2_11"
+                },
+                {
+                    "name": "XM1014",
+                    "value": "/csgo/search/2_12"
+                },
+                {
+                    "name": "MAG-7",
+                    "value": "/csgo/search/2_13"
+                },
+                {
+                    "name": "截短霰弹枪",
+                    "value": "/csgo/search/2_14"
+                },
+                {
+                    "name": "M249",
+                    "value": "/csgo/search/2_15"
+                },
+                {
+                    "name": "Negev",
+                    "value": "/csgo/search/2_16"
+                }
+            ]
+        },
+        {
+            "name": "微型冲锋枪 ",
+            "value": "/csgo/search/3_0",
+            "children": [
+                {
+                    "name": "MAC-10",
+                    "value": "/csgo/search/3_17"
+                },
+                {
+                    "name": "MP9",
+                    "value": "/csgo/search/3_18"
+                },
+                {
+                    "name": "MP7",
+                    "value": "/csgo/search/3_19"
+                },
+                {
+                    "name": "UMP-45",
+                    "value": "/csgo/search/3_20"
+                },
+                {
+                    "name": "PP-野牛",
+                    "value": "/csgo/search/3_21"
+                },
+                {
+                    "name": "P90",
+                    "value": "/csgo/search/3_22"
+                }
+            ]
+        },
+        {
+            "name": "步枪 ",
+            "value": "/csgo/search/4_0",
+            "children": [
+                {
+                    "name": "FAMAS",
+                    "value": "/csgo/search/4_23"
+                },
+                {
+                    "name": "加利尔 AR",
+                    "value": "/csgo/search/4_24"
+                },
+                {
+                    "name": "M4A4",
+                    "value": "/csgo/search/4_25"
+                },
+                {
+                    "name": "M4A1 消音版",
+                    "value": "/csgo/search/4_26"
+                },
+                {
+                    "name": "AK-47",
+                    "value": "/csgo/search/4_27"
+                },
+                {
+                    "name": "AWP",
+                    "value": "/csgo/search/4_28"
+                },
+                {
+                    "name": "AUG",
+                    "value": "/csgo/search/4_29"
+                },
+                {
+                    "name": "SG 553",
+                    "value": "/csgo/search/4_30"
+                },
+                {
+                    "name": "SSG 08",
+                    "value": "/csgo/search/4_31"
+                },
+                {
+                    "name": "SCAR-20",
+                    "value": "/csgo/search/4_32"
+                },
+                {
+                    "name": "G3SG1",
+                    "value": "/csgo/search/4_33"
+                }
+            ]
+        },
+        {
+            "name": "匕首 ",
+            "value": "/csgo/search/5_0",
+            "children": [
+                {
+                    "name": "折叠刀",
+                    "value": "/csgo/search/5_34"
+                },
+                {
+                    "name": "穿肠刀",
+                    "value": "/csgo/search/5_35"
+                },
+                {
+                    "name": "刺刀",
+                    "value": "/csgo/search/5_36"
+                },
+                {
+                    "name": "M9刺刀",
+                    "value": "/csgo/search/5_37"
+                },
+                {
+                    "name": "爪子刀",
+                    "value": "/csgo/search/5_38"
+                },
+                {
+                    "name": "蝴蝶刀",
+                    "value": "/csgo/search/5_39"
+                },
+                {
+                    "name": "猎刀",
+                    "value": "/csgo/search/5_40"
+                },
+                {
+                    "name": "弯刀",
+                    "value": "/csgo/search/5_41"
+                },
+                {
+                    "name": "暗影双匕",
+                    "value": "/csgo/search/5_47"
+                },
+                {
+                    "name": "鲍伊猎刀",
+                    "value": "/csgo/search/5_48"
+                }
+            ]
+        },
+        {
+            "name": "手套 ",
+            "value": "/csgo/search/13_0",
+            "children": [
+                {
+                    "name": "血猎手套",
+                    "value": "/csgo/search/13_106"
+                },
+                {
+                    "name": "驾驶手套",
+                    "value": "/csgo/search/13_107"
+                },
+                {
+                    "name": "手部束带",
+                    "value": "/csgo/search/13_108"
+                },
+                {
+                    "name": "摩托手套",
+                    "value": "/csgo/search/13_109"
+                },
+                {
+                    "name": "专业手套",
+                    "value": "/csgo/search/13_110"
+                },
+                {
+                    "name": "运动手套",
+                    "value": "/csgo/search/13_111"
+                }
+            ]
+        },
+        {
+            "name": "其它 ",
+            "value": "",
+            "children": [
+                {
+                    "name": "箱子",
+                    "value": "/category-6"
+                },
+                {
+                    "name": "钥匙",
+                    "value": "/category-7"
+                },
+                {
+                    "name": "印花",
+                    "value": "/category-8"
+                },
+                {
+                    "name": "音乐盒",
+                    "value": "/category-9"
+                },
+                {
+                    "name": "胸章",
+                    "value": "/category-10"
+                },
+                {
+                    "name": "涂鸦",
+                    "value": "/category-11"
+                },
+                {
+                    "name": "标签",
+                    "value": "/standard_product/554122"
+                },
+                {
+                    "name": "工具",
+                    "value": "/category-14"
+                }
+            ]
+        }
+    ],
+    "rarities": [
+        {
+            "name": "请选择",
+            "value": ""
+        },
+        {
+            "name": "军规级",
+            "value": "588"
+        },
+        {
+            "name": "消费级",
+            "value": "600"
+        },
+        {
+            "name": "受限",
+            "value": "608"
+        },
+        {
+            "name": "隐秘",
+            "value": "621"
+        },
+        {
+            "name": "保密",
+            "value": "627"
+        },
+        {
+            "name": "非凡",
+            "value": "654"
+        },
+        {
+            "name": "工业级",
+            "value": "666"
+        },
+        {
+            "name": "违禁",
+            "value": "750"
+        }
+    ],
+    "exteriors": [
+        {
+            "name": "请选择",
+            "value": ""
+        },
+        {
+            "name": "崭新出厂",
+            "value": "589"
+        },
+        {
+            "name": "破损不堪",
+            "value": "595"
+        },
+        {
+            "name": "久经沙场",
+            "value": "601"
+        },
+        {
+            "name": "战痕累累",
+            "value": "609"
+        },
+        {
+            "name": "略有磨损",
+            "value": "615"
+        },
+        {
+            "name": "无涂装",
+            "value": "728"
+        }
+    ],
+    "receivers": [
+        {
+            "name":"zusida",
+            "mail":"zusida@126.com"
+        },
+        {
+            "name":"momoko",
+            "mail":"momoko8443@163.com"
+        }
+    ]
+}

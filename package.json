@@ -1,0 +1,23 @@
+{
+  "name": "igxe-go",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "inquirer": "^3.2.0",
+    "lowdb": "^0.16.2",
+    "node-schedule": "^1.2.3",
+    "nodemailer": "^4.0.1",
+    "phantomjs-prebuilt": "^2.1.14",
+    "selenium-webdriver": "^3.4.0",
+    "shortid": "^2.2.8"
+  }
+}
