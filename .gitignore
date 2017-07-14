@@ -2,3 +2,4 @@ node_modules/
 public/bower_components/
 .vscode
 database/account.json
+.DS_Store

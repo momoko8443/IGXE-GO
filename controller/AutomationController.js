@@ -30,7 +30,7 @@ function AutomationController(){
             _tasks.push({'_id':task._id,'url':searchURL});
         });
         automation.execute(_tasks).then(()=>{
-            console.log('run automation successfully');
+            console.info('run automation successfully');
             let tasks = taskDAO.findAllRunning();
             tasks.forEach(function(task) {
                 let maxPrice = task.maxPrice;
@@ -44,6 +44,8 @@ function AutomationController(){
                     mailSender.send(alert_list,task.receivers);
                 }  
             });
+        }).catch( err =>{
+            console.error('execute automation failed');
         });
     };
 }

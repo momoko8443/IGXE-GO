@@ -18,12 +18,12 @@ app.use(bodyParser.json());
 app.use('/api', baseInfoRouter());
 app.use('/api', taskRouter());
 
-// var j = schedule.scheduleJob('*/5 * * * *', function () {
-//     console.log('automation task is running');
-//     automationController.run();
-// });
+var j = schedule.scheduleJob('*/10 * * * *', function () {
+    console.log('automation task is running');
+    automationController.run();
+});
 
- automationController.run();
+//automationController.run();
 
 
 app.listen(port, () => {

@@ -22,6 +22,9 @@ function Automation() {
             doAsyncSeries(tasks).then( ()=> {
                 this.driver.quit();
                 resolve();
+            }).catch(err=>{
+                console.error('search weapons failed');
+                reject();
             });
             function doAsyncSeries(tasks) {
                 return tasks.reduce(function (promise, task) {
@@ -44,7 +47,10 @@ function Automation() {
                 doAsyncSeries(elems).then( ()=> {
                     taskDAO.update({'_id':task._id,'result':newResult});
                     resolve();
-                })
+                }).catch( err => {
+                    console.error('weapons were not found');
+                    reject();
+                });
                 function doAsyncSeries(elements) {
                     return elements.reduce(function (promise, element) {
                         return promise.then(function (result) {
@@ -63,7 +69,13 @@ function Automation() {
                                 console.log(price, href);
                                 newResult.push({'price':price,'href':href});
                                 resolve();
+                            }).catch(err => {
+                                console.log('weapon\'s link was not found');
+                                reject();
                             });
+                        }).catch(err => {
+                            console.log('weapon\'s price was not found');
+                            reject();
                         });
                     });                   
                 }
@@ -75,13 +87,19 @@ function Automation() {
         return new Promise((resolve, reject) => {
             console.log('start to login');
             this.driver.get('https://www.igxe.cn/login');
-            this.driver.wait(until.titleContains('Steam'), 10000);
+            this.driver.wait(until.titleContains('Steam'), 10000).catch(err => {
+                console.error('can not load steam login page');
+                reject();
+            });
             this.driver.findElement(By.id('steamAccountName')).sendKeys(steam.username);
             this.driver.findElement(By.id('steamPassword')).sendKeys(steam.password);
             this.driver.findElement(By.id('imageLogin')).click();
             this.driver.wait(until.titleContains('csgo'), 30000).then(result => {
                 console.log('login success');
                 resolve(result);
+            }).catch(err => {
+                console.error('login failed');
+                reject();
             });
         });
     }
