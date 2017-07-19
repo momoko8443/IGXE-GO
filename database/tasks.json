@@ -17,16 +17,10 @@
         "value": "589",
         "_alias": "option"
       },
-      "maxPrice": "480",
+      "maxPrice": "500",
       "isStatTrak": true,
       "isSticker": false,
       "receivers": [
-        {
-          "name": "zusida",
-          "mail": "zusida@126.com",
-          "_alias": "receiver",
-          "isPicked": true
-        },
         {
           "name": "momoko",
           "mail": "momoko8443@163.com",
@@ -38,52 +32,76 @@
       "_id": "BykqI1SHb",
       "result": [
         {
-          "price": "489.00",
-          "href": "https://www.igxe.cn/product-93820899"
+          "price": "492.00",
+          "href": "https://www.igxe.cn/product-96405682",
+          "marketAvgPrice": "542.12",
+          "exterior": " 0.06601110845804 "
         },
         {
-          "price": "490.00",
-          "href": "https://www.igxe.cn/product-90840946"
+          "price": "492.50",
+          "href": "https://www.igxe.cn/product-97938781",
+          "marketAvgPrice": "542.12",
+          "exterior": " 读取中............ "
         },
         {
-          "price": "495.00",
-          "href": "https://www.igxe.cn/product-90769657"
+          "price": "492.50",
+          "href": "https://www.igxe.cn/product-97938713",
+          "marketAvgPrice": "542.12",
+          "exterior": " 读取中............ "
         },
         {
-          "price": "508.00",
-          "href": "https://www.igxe.cn/product-91338038"
+          "price": "492.50",
+          "href": "https://www.igxe.cn/product-97938731",
+          "marketAvgPrice": "542.12",
+          "exterior": " 读取中............ "
+        },
+        {
+          "price": "492.50",
+          "href": "https://www.igxe.cn/product-97938716",
+          "marketAvgPrice": "542.12",
+          "exterior": " 读取中............ "
+        },
+        {
+          "price": "493.00",
+          "href": "https://www.igxe.cn/product-97199733",
+          "marketAvgPrice": "542.12",
+          "exterior": " 读取中............ "
+        },
+        {
+          "price": "494.00",
+          "href": "https://www.igxe.cn/product-97350330",
+          "marketAvgPrice": "542.12",
+          "exterior": " 0.06829741597176 "
+        },
+        {
+          "price": "498.86",
+          "href": "https://www.igxe.cn/product-95714936",
+          "marketAvgPrice": "542.12",
+          "exterior": " 读取中............ "
+        },
+        {
+          "price": "500.00",
+          "href": "https://www.igxe.cn/product-96207386",
+          "marketAvgPrice": "542.12",
+          "exterior": " 0.06509934365749 "
         },
         {
           "price": "510.00",
-          "href": "https://www.igxe.cn/product-80162274"
+          "href": "https://www.igxe.cn/product-97798692",
+          "marketAvgPrice": "542.12",
+          "exterior": " 0.04410897940397 "
         },
         {
-          "price": "510.00",
-          "href": "https://www.igxe.cn/product-93091423"
+          "price": "520.00",
+          "href": "https://www.igxe.cn/product-95804736",
+          "marketAvgPrice": "542.12",
+          "exterior": " 0.04247759655118 "
         },
         {
-          "price": "530.00",
-          "href": "https://www.igxe.cn/product-94035407"
-        },
-        {
-          "price": "550.00",
-          "href": "https://www.igxe.cn/product-89884729"
-        },
-        {
-          "price": "600.00",
-          "href": "https://www.igxe.cn/product-94239288"
-        },
-        {
-          "price": "670.00",
-          "href": "https://www.igxe.cn/product-62834318"
-        },
-        {
-          "price": "688.00",
-          "href": "https://www.igxe.cn/product-87763209"
-        },
-        {
-          "price": "700.00",
-          "href": "https://www.igxe.cn/product-76513445"
+          "price": "525.00",
+          "href": "https://www.igxe.cn/product-94035407",
+          "marketAvgPrice": "542.12",
+          "exterior": " 0.03015427850187 "
         }
       ]
     },
@@ -121,7 +139,7 @@
           "isPicked": true
         }
       ],
-      "isRunning": true,
+      "isRunning": false,
       "_id": "BJM2Ukrr-",
       "result": [
         {
@@ -208,7 +226,7 @@
           "isPicked": true
         }
       ],
-      "isRunning": true,
+      "isRunning": false,
       "_id": "HJGgDyBBW",
       "result": [
         {
