@@ -13,8 +13,8 @@ function MailSender(){
         auth: {
             user: smtp.username,
             pass: smtp.password
-        },
-        proxy: 'http://web-proxy.jpn.hp.com:8080'
+        }
+        //proxy: 'http://web-proxy.jpn.hp.com:8080'
     });
 
     this.send = function(alert_items,receivers){

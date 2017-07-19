@@ -17,7 +17,7 @@ function Automation() {
             this.driver = new webdriver.Builder()
                 //.forBrowser('chrome')
                 .withCapabilities(phantomjs)
-                .setProxy(proxy.manual({ http: 'web-proxy.jpn.hp.com:8080' }))
+                //.setProxy(proxy.manual({ http: 'web-proxy.jpn.hp.com:8080' }))
                 .build();
             doAsyncSeries(tasks).then( ()=> {
                 this.driver.quit();

@@ -1,15 +1,15 @@
 {
   "tasks": [
     {
-      "keyword": "前线迷雾",
+      "keyword": "PP-野牛（StatTrak™） | 阿努比斯之审判",
       "weapon": {
-        "name": "AK-47",
-        "value": "/csgo/search/4_27",
+        "name": "PP-野牛",
+        "value": "/csgo/search/3_21",
         "_alias": "child"
       },
       "rarity": {
-        "name": "请选择",
-        "value": "",
+        "name": "隐秘",
+        "value": "621",
         "_alias": "option"
       },
       "exterior": {
@@ -17,7 +17,135 @@
         "value": "589",
         "_alias": "option"
       },
-      "maxPrice": "480",
+      "maxPrice": "160",
+      "isStatTrak": true,
+      "isSticker": false,
+      "receivers": [
+        {
+          "name": "zusida",
+          "mail": "zusida@126.com",
+          "_alias": "receiver",
+          "isPicked": true
+        }
+      ],
+      "isRunning": true,
+      "_id": "B1ZBKX5rW",
+      "result": []
+    },
+    {
+      "keyword": "CZ75 自动手枪（纪念品） | 复古圣杯",
+      "weapon": {
+        "name": "CZ75 自动手枪",
+        "value": "/csgo/search/1_6",
+        "_alias": "child"
+      },
+      "rarity": {
+        "name": "受限",
+        "value": "608",
+        "_alias": "option"
+      },
+      "exterior": {
+        "name": "请选择",
+        "value": "",
+        "_alias": "option"
+      },
+      "maxPrice": "115",
+      "isStatTrak": false,
+      "isSticker": false,
+      "receivers": [
+        {
+          "name": "zusida",
+          "mail": "zusida@126.com",
+          "_alias": "receiver",
+          "isPicked": true
+        }
+      ],
+      "isRunning": true,
+      "_id": "HkeJc79rW",
+      "result": []
+    },
+    {
+      "keyword": "AUG | 秋叶原之选",
+      "weapon": {
+        "name": "AUG",
+        "value": "/csgo/search/4_29",
+        "_alias": "child"
+      },
+      "rarity": {
+        "name": "隐秘",
+        "value": "621",
+        "_alias": "option"
+      },
+      "exterior": {
+        "name": "久经沙场",
+        "value": "601",
+        "_alias": "option"
+      },
+      "maxPrice": "360",
+      "isStatTrak": false,
+      "isSticker": false,
+      "receivers": [
+        {
+          "name": "zusida",
+          "mail": "zusida@126.com",
+          "_alias": "receiver",
+          "isPicked": true
+        }
+      ],
+      "isRunning": true,
+      "_id": "rJnms75Sb",
+      "result": []
+    },
+    {
+      "keyword": "AWP（StatTrak?） | 浮生如梦",
+      "weapon": {
+        "name": "AWP",
+        "value": "/csgo/search/4_28",
+        "_alias": "child"
+      },
+      "rarity": {
+        "name": "隐秘",
+        "value": "621",
+        "_alias": "option"
+      },
+      "exterior": {
+        "name": "崭新出厂",
+        "value": "589",
+        "_alias": "option"
+      },
+      "maxPrice": "235",
+      "isStatTrak": false,
+      "isSticker": false,
+      "receivers": [
+        {
+          "name": "zusida",
+          "mail": "zusida@126.com",
+          "_alias": "receiver",
+          "isPicked": true
+        }
+      ],
+      "isRunning": true,
+      "_id": "BkFTsX5SW",
+      "result": []
+    },
+    {
+      "keyword": "AK-47（StatTrak?） | 前线迷雾 ",
+      "weapon": {
+        "name": "AK-47",
+        "value": "/csgo/search/4_27",
+        "_alias": "child"
+      },
+      "rarity": {
+        "name": "隐秘",
+        "value": "621",
+        "_alias": "option"
+      },
+      "exterior": {
+        "name": "崭新出厂",
+        "value": "589",
+        "_alias": "option"
+      },
+      "maxPrice": "465",
       "isStatTrak": true,
       "isSticker": false,
       "receivers": [
@@ -35,68 +163,19 @@
         }
       ],
       "isRunning": true,
-      "_id": "BykqI1SHb",
-      "result": [
-        {
-          "price": "489.00",
-          "href": "https://www.igxe.cn/product-93820899"
-        },
-        {
-          "price": "490.00",
-          "href": "https://www.igxe.cn/product-90840946"
-        },
-        {
-          "price": "495.00",
-          "href": "https://www.igxe.cn/product-90769657"
-        },
-        {
-          "price": "508.00",
-          "href": "https://www.igxe.cn/product-91338038"
-        },
-        {
-          "price": "510.00",
-          "href": "https://www.igxe.cn/product-80162274"
-        },
-        {
-          "price": "510.00",
-          "href": "https://www.igxe.cn/product-93091423"
-        },
-        {
-          "price": "530.00",
-          "href": "https://www.igxe.cn/product-94035407"
-        },
-        {
-          "price": "550.00",
-          "href": "https://www.igxe.cn/product-89884729"
-        },
-        {
-          "price": "600.00",
-          "href": "https://www.igxe.cn/product-94239288"
-        },
-        {
-          "price": "670.00",
-          "href": "https://www.igxe.cn/product-62834318"
-        },
-        {
-          "price": "688.00",
-          "href": "https://www.igxe.cn/product-87763209"
-        },
-        {
-          "price": "700.00",
-          "href": "https://www.igxe.cn/product-76513445"
-        }
-      ]
+      "_id": "BJh72m5HW",
+      "result": []
     },
     {
-      "keyword": "次时代",
+      "keyword": "Tec-9 | 核子威慑",
       "weapon": {
-        "name": "M4A1 消音版",
-        "value": "/csgo/search/4_26",
+        "name": "Tec-9",
+        "value": "/csgo/search/1_8",
         "_alias": "child"
       },
       "rarity": {
-        "name": "请选择",
-        "value": "",
+        "name": "受限",
+        "value": "608",
         "_alias": "option"
       },
       "exterior": {
@@ -105,7 +184,7 @@
         "_alias": "option"
       },
       "maxPrice": "180",
-      "isStatTrak": true,
+      "isStatTrak": false,
       "isSticker": false,
       "receivers": [
         {
@@ -113,72 +192,66 @@
           "mail": "zusida@126.com",
           "_alias": "receiver",
           "isPicked": true
-        },
-        {
-          "name": "momoko",
-          "mail": "momoko8443@163.com",
-          "_alias": "receiver",
-          "isPicked": true
         }
       ],
       "isRunning": true,
-      "_id": "BJM2Ukrr-",
+      "_id": "Skoi3QcrZ",
       "result": [
         {
-          "price": "191.50",
-          "href": "https://www.igxe.cn/product-91664254"
+          "price": "208.00",
+          "href": "https://www.igxe.cn/product-98384117"
         },
         {
-          "price": "192.50",
-          "href": "https://www.igxe.cn/product-90120493"
+          "price": "208.50",
+          "href": "https://www.igxe.cn/product-86093789"
         },
         {
-          "price": "194.80",
-          "href": "https://www.igxe.cn/product-88632509"
+          "price": "209.00",
+          "href": "https://www.igxe.cn/product-69558169"
         },
         {
-          "price": "197.00",
-          "href": "https://www.igxe.cn/product-88464172"
+          "price": "213.70",
+          "href": "https://www.igxe.cn/product-87003062"
         },
         {
-          "price": "210.00",
-          "href": "https://www.igxe.cn/product-94383609"
+          "price": "235.54",
+          "href": "https://www.igxe.cn/product-98137716"
         },
         {
-          "price": "210.00",
-          "href": "https://www.igxe.cn/product-94383610"
+          "price": "235.54",
+          "href": "https://www.igxe.cn/product-98137737"
         },
         {
-          "price": "215.00",
-          "href": "https://www.igxe.cn/product-88504242"
+          "price": "251.38",
+          "href": "https://www.igxe.cn/product-97344568"
         },
         {
-          "price": "215.00",
-          "href": "https://www.igxe.cn/product-90983881"
+          "price": "251.38",
+          "href": "https://www.igxe.cn/product-97359474"
         },
         {
-          "price": "220.00",
-          "href": "https://www.igxe.cn/product-94383608"
+          "price": "266.25",
+          "href": "https://www.igxe.cn/product-95741211"
         },
         {
-          "price": "235.00",
-          "href": "https://www.igxe.cn/product-86922342"
+          "price": "309.00",
+          "href": "https://www.igxe.cn/product-86311615"
         },
         {
-          "price": "240.00",
-          "href": "https://www.igxe.cn/product-89061881"
+          "price": "330.00",
+          "href": "https://www.igxe.cn/product-90408320"
         },
         {
-          "price": "250.00",
-          "href": "https://www.igxe.cn/product-91351808"
+          "price": "1100.00",
+          "href": "https://www.igxe.cn/product-26760362"
         }
       ]
     },
     {
-      "keyword": "炎龙之焰",
+      "keyword": "Tec-9 | 核子威慑",
       "weapon": {
-        "name": "SSG 08",
-        "value": "/csgo/search/4_31",
+        "name": "Tec-9",
+        "value": "/csgo/search/1_8",
         "_alias": "child"
       },
       "rarity": {
@@ -191,7 +264,109 @@
         "value": "589",
         "_alias": "option"
       },
-      "maxPrice": "550",
+      "maxPrice": "1000",
+      "isStatTrak": false,
+      "isSticker": false,
+      "receivers": [
+        {
+          "name": "zusida",
+          "mail": "zusida@126.com",
+          "_alias": "receiver",
+          "isPicked": true
+        }
+      ],
+      "isRunning": true,
+      "_id": "B1ZCnm5HW",
+      "result": []
+    },
+    {
+      "keyword": "AWP（StatTrak™） | 二西莫夫",
+      "weapon": {
+        "name": "AWP",
+        "value": "/csgo/search/4_28",
+        "_alias": "child"
+      },
+      "rarity": {
+        "name": "隐秘",
+        "value": "621",
+        "_alias": "option"
+      },
+      "exterior": {
+        "name": "崭新出厂",
+        "value": "589",
+        "_alias": "option"
+      },
+      "maxPrice": "1000",
+      "isStatTrak": false,
+      "isSticker": false,
+      "receivers": [
+        {
+          "name": "zusida",
+          "mail": "zusida@126.com",
+          "_alias": "receiver",
+          "isPicked": true
+        },
+        {
+          "name": "momoko",
+          "mail": "momoko8443@163.com",
+          "_alias": "receiver",
+          "isPicked": true
+        }
+      ],
+      "isRunning": true,
+      "_id": "ryMSTX9Hb",
+      "result": []
+    },
+    {
+      "keyword": "AWP（StatTrak™） | 二西莫夫",
+      "weapon": {
+        "name": "AWP",
+        "value": "/csgo/search/4_28",
+        "_alias": "child"
+      },
+      "rarity": {
+        "name": "隐秘",
+        "value": "621",
+        "_alias": "option"
+      },
+      "exterior": {
+        "name": "略有磨损",
+        "value": "615",
+        "_alias": "option"
+      },
+      "maxPrice": "1000",
+      "isStatTrak": false,
+      "isSticker": false,
+      "receivers": [
+        {
+          "name": "zusida",
+          "mail": "zusida@126.com",
+          "_alias": "receiver",
+          "isPicked": true
+        }
+      ],
+      "isRunning": true,
+      "_id": "r16uTm9HZ",
+      "result": []
+    },
+    {
+      "keyword": "SSG 08（StatTrak™） | 炎龙之焰",
+      "weapon": {
+        "name": "SSG 08",
+        "value": "/csgo/search/4_31",
+        "_alias": "child"
+      },
+      "rarity": {
+        "name": "隐秘",
+        "value": "621",
+        "_alias": "option"
+      },
+      "exterior": {
+        "name": "崭新出厂",
+        "value": "589",
+        "_alias": "option"
+      },
+      "maxPrice": "490",
       "isStatTrak": true,
       "isSticker": false,
       "receivers": [
@@ -209,55 +384,203 @@
         }
       ],
       "isRunning": true,
-      "_id": "HJGgDyBBW",
+      "_id": "BJXeE1jSW",
       "result": [
         {
-          "price": "546.50",
-          "href": "https://www.igxe.cn/product-94226907"
+          "price": "508.39",
+          "href": "https://www.igxe.cn/product-96078073"
         },
         {
-          "price": "546.50",
-          "href": "https://www.igxe.cn/product-90796087"
-        },
-        {
-          "price": "546.50",
-          "href": "https://www.igxe.cn/product-90796088"
-        },
-        {
-          "price": "546.50",
-          "href": "https://www.igxe.cn/product-94226904"
-        },
-        {
-          "price": "547.00",
-          "href": "https://www.igxe.cn/product-94385961"
-        },
-        {
-          "price": "547.50",
-          "href": "https://www.igxe.cn/product-89498784"
-        },
-        {
-          "price": "547.50",
+          "price": "508.49",
           "href": "https://www.igxe.cn/product-89498785"
         },
         {
-          "price": "547.50",
+          "price": "508.49",
           "href": "https://www.igxe.cn/product-89498788"
         },
         {
-          "price": "548.00",
-          "href": "https://www.igxe.cn/product-94343626"
+          "price": "521.00",
+          "href": "https://www.igxe.cn/product-98182578"
         },
         {
-          "price": "550.00",
-          "href": "https://www.igxe.cn/product-82894729"
-        },
-        {
-          "price": "555.00",
+          "price": "521.00",
           "href": "https://www.igxe.cn/product-91870797"
+        },
+        {
+          "price": "566.00",
+          "href": "https://www.igxe.cn/product-94226907"
+        },
+        {
+          "price": "566.00",
+          "href": "https://www.igxe.cn/product-94226904"
+        },
+        {
+          "price": "566.00",
+          "href": "https://www.igxe.cn/product-90796087"
+        },
+        {
+          "price": "566.00",
+          "href": "https://www.igxe.cn/product-90796088"
         },
         {
           "price": "573.00",
           "href": "https://www.igxe.cn/product-91662224"
+        },
+        {
+          "price": "579.99",
+          "href": "https://www.igxe.cn/product-90752492"
+        }
+      ]
+    },
+    {
+      "keyword": "AK-47（StatTrak™） | 荒野反叛",
+      "weapon": {
+        "name": "AK-47",
+        "value": "/csgo/search/4_27",
+        "_alias": "child"
+      },
+      "rarity": {
+        "name": "隐秘",
+        "value": "621",
+        "_alias": "option"
+      },
+      "exterior": {
+        "name": "略有磨损",
+        "value": "615",
+        "_alias": "option"
+      },
+      "maxPrice": "600",
+      "isStatTrak": true,
+      "isSticker": false,
+      "receivers": [
+        {
+          "name": "zusida",
+          "mail": "zusida@126.com",
+          "_alias": "receiver",
+          "isPicked": true
+        },
+        {
+          "name": "momoko",
+          "mail": "momoko8443@163.com",
+          "_alias": "receiver",
+          "isPicked": true
+        }
+      ],
+      "isRunning": true,
+      "_id": "SkN1HqiSW",
+      "result": []
+    },
+    {
+      "keyword": "格洛克 18 型（StatTrak™） | 荒野反叛",
+      "weapon": {
+        "name": "格洛克18型",
+        "value": "/csgo/search/1_3",
+        "_alias": "child"
+      },
+      "rarity": {
+        "name": "隐秘",
+        "value": "621",
+        "_alias": "option"
+      },
+      "exterior": {
+        "name": "破损不堪",
+        "value": "595",
+        "_alias": "option"
+      },
+      "maxPrice": "120",
+      "isStatTrak": true,
+      "isSticker": false,
+      "receivers": [
+        {
+          "name": "zusida",
+          "mail": "zusida@126.com",
+          "_alias": "receiver",
+          "isPicked": true
+        },
+        {
+          "name": "momoko",
+          "mail": "momoko8443@163.com",
+          "_alias": "receiver",
+          "isPicked": true
+        }
+      ],
+      "isRunning": true,
+      "_id": "By5E85jrb",
+      "result": [
+        {
+          "price": "160.80",
+          "href": "https://www.igxe.cn/product-94974064"
+        },
+        {
+          "price": "161.80",
+          "href": "https://www.igxe.cn/product-84011646"
+        },
+        {
+          "price": "161.80",
+          "href": "https://www.igxe.cn/product-90479958"
+        },
+        {
+          "price": "164.30",
+          "href": "https://www.igxe.cn/product-93288199"
+        },
+        {
+          "price": "165.00",
+          "href": "https://www.igxe.cn/product-93192261"
+        },
+        {
+          "price": "165.30",
+          "href": "https://www.igxe.cn/product-64737406"
+        },
+        {
+          "price": "182.57",
+          "href": "https://www.igxe.cn/product-95752812"
+        }
+      ]
+    },
+    {
+      "keyword": "加利尔 AR（StatTrak™） | 喧闹骷髅",
+      "weapon": {
+        "name": "加利尔 AR",
+        "value": "/csgo/search/4_24",
+        "_alias": "child"
+      },
+      "rarity": {
+        "name": "隐秘",
+        "value": "621",
+        "_alias": "option"
+      },
+      "exterior": {
+        "name": "久经沙场",
+        "value": "601",
+        "_alias": "option"
+      },
+      "maxPrice": "350",
+      "isStatTrak": true,
+      "isSticker": false,
+      "receivers": [
+        {
+          "name": "zusida",
+          "mail": "zusida@126.com",
+          "_alias": "receiver",
+          "isPicked": true
+        },
+        {
+          "name": "momoko",
+          "mail": "momoko8443@163.com",
+          "_alias": "receiver",
+          "isPicked": true
+        }
+      ],
+      "isRunning": true,
+      "_id": "rkb9w9or-",
+      "result": [
+        {
+          "price": "576.00",
+          "href": "https://www.igxe.cn/product-93391251"
+        },
+        {
+          "price": "660.00",
+          "href": "https://www.igxe.cn/product-91019841"
         }
       ]
     }
