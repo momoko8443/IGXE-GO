@@ -58,16 +58,21 @@
                             <td>{{task.isSticker}}</td>
                             <td>{{task.maxPrice}}</td>
                             <td>
-                                <a class="btn btn-default btn-sm" href="javascript:;" role="button" uku-render="parent.mainCtrl.iconStatus(task.isRunning)" uku-onclick="parent.mainCtrl.runOrStopTask(task)">
+                                <a class="btn btn-default btn-sm" href="javascript:;" role="button" uku-render="parent.mainCtrl.iconStatus(task.isRunning)"
+                                    uku-onclick="parent.mainCtrl.runOrStopTask(task)">
                                     <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                                </a>
+                                <a class="btn btn-default btn-sm" href="javascript:;" role="button" uku-render="parent.mainCtrl.iconStatus(task.isRunning)"
+                                    uku-onclick="parent.mainCtrl.editWeapon(task)">
+                                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
                                 </a>
                                 <a class="btn btn-default btn-sm" href="javascript:;" role="button" uku-render="task.isRunning" uku-onclick="parent.mainCtrl.runOrStopTask(task)">
                                     <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
                                 </a>
-                                 <a class="btn btn-default btn-sm" href="javascript:;" role="button" uku-onclick="parent.mainCtrl.removeTask(task)">
+                                <a class="btn btn-default btn-sm" href="javascript:;" role="button" uku-onclick="parent.mainCtrl.removeTask(task)">
                                     <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
                                 </a>
-                                
+
                             </td>
                         </tr>
                     </tbody>
@@ -146,7 +151,8 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success" uku-onclick="mainCtrl.createTask()">确定</button>
+                    <button type="button" class="btn btn-success" uku-render="mainCtrl.editMode" uku-onclick="mainCtrl.updateTask()">更新</button>
+                    <button type="button" class="btn btn-success" uku-onclick="mainCtrl.createTask(false)">{{mainCtrl.saveButtonLable()}}</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
                 </div>
             </div>
@@ -192,6 +198,7 @@
             uku.refresh('mainCtrl');
         };
         this.addWeapon = function () {
+            this.editMode = false;
             $('#myModal').modal('toggle');
             //this.currentTask = task;
             this.currentTask = {};
@@ -207,6 +214,56 @@
             this.currentTask.isStatTrak = false;
             this.currentTask.isSticker = false;
             this.currentTask.maxPrice = 299;
+            uku.refresh('mainCtrl');
+        };
+        this.editMode = false;
+        this.editWeapon = function (task) {
+            //task;
+            this.editMode = true;
+            self.currentTask._id = task._id;
+            $('#myModal').modal('toggle');
+            this.options.every(function(option,index){
+                if(option.children){
+                        option.children.every(function(child_option){
+                        if(child_option.value === task.weapon.value){
+                            self.currentTask.selectedOption = self.options[index];
+                            self.currentTask.selectedChildOption = child_option;
+                            return false;
+                        }
+                        return true;
+                    });
+                }
+                return true;  
+            });
+            this.options_1.every(function(option,index){
+                if(option.value === task.rarity.value){
+                    self.currentTask.selectedOption_1 = self.options_1[index];
+                    return false;
+                }
+                return true;
+            });
+            this.options_2.every(function(option,index){
+                if(option.value === task.exterior.value){
+                    self.currentTask.selectedOption_2 = self.options_2[index];
+                    return false;
+                }
+                return true;
+            });
+            this.options_3.forEach(function (receiver) {
+                receiver.isPicked = false;
+                task.receivers.every(function (task_receiver){
+                    if(receiver.mail === task_receiver.mail){
+                        receiver.isPicked = true;
+                        return false;
+                    }
+                    return true;
+                })
+                
+            });
+            this.currentTask.keyword = task.keyword;
+            this.currentTask.isStatTrak = task.isStatTrak;
+            this.currentTask.isSticker = task.isSticker;
+            this.currentTask.maxPrice = task.maxPrice;
             uku.refresh('mainCtrl');
         };
 
@@ -241,35 +298,44 @@
             return info;
         };
 
-        this.removeTask = function(task){
+        this.removeTask = function (task) {
             $.ajax({
-                url: '/api/tasks/'+task._id,
+                url: '/api/tasks/' + task._id,
                 method: 'DELETE',
                 success: function () {
                     self.getTasks();
                 }
             });
         };
-        
-        this.iconStatus = function(isRunning){
+
+        this.iconStatus = function (isRunning) {
             return !isRunning;
         }
 
-        this.runOrStopTask = function(task){
+        this.runOrStopTask = function (task) {
             $.ajax({
-                url: '/api/tasks/'+task._id,
+                url: '/api/tasks/' + task._id,
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
                 },
-                data: JSON.stringify({_id:task._id,isRunning:!task.isRunning}),
+                data: JSON.stringify({ _id: task._id, isRunning: !task.isRunning }),
                 success: function () {
                     self.getTasks();
                 }
             });
+        };
+
+        this.saveButtonLable = function(){
+            if(this.editMode){
+                return '另存';
+            }else{
+                return '确定';
+            }
         }
 
-        this.createTask = function () {
+
+        this.createTask = function (isUpdate) {
             var task = {};
             task.keyword = this.currentTask.keyword;
             task.weapon = this.currentTask.selectedChildOption;
@@ -286,9 +352,17 @@
                 }
             });
 
+            var method = 'POST';
+            var url = '/api/tasks';
+            if(isUpdate && this.currentTask._id){
+                method = 'PUT';
+                url = url + '/' + this.currentTask._id;
+                task._id = this.currentTask._id;
+            }
+
             $.ajax({
-                url: '/api/tasks',
-                method: 'POST',
+                url: url,
+                method: method,
                 headers: {
                     'content-type': 'application/json'
                 },
@@ -298,7 +372,12 @@
                     self.getTasks();
                 }
             });
-        }
+        };
+
+        this.updateTask = function() {
+            var isUpdate = true;
+            this.createTask(isUpdate);
+        };
     }
 
 </script>
