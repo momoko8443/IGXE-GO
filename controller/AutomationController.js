@@ -1,6 +1,7 @@
 var taskDAO = require('../database/dao/TaskDAO');
 var automation = require('../selenium/Automation');
 var mailSender = require('../mail/MailSender');
+var receiverDAO = require('../database/dao/ReceiverDAO');
 function AutomationController(){
     let domain = 'https://www.igxe.cn';
     function convertBoolean(flag){
@@ -32,18 +33,34 @@ function AutomationController(){
         automation.execute(_tasks).then(()=>{
             console.info('run automation successfully');
             let tasks = taskDAO.findAllRunning();
+            let alert_list = [];
             tasks.forEach(function(task) {
-                let maxPrice = task.maxPrice;
-                let alert_list = [];
                 task.result.forEach((item) => {
-                    if(parseFloat(item.price) <= parseInt(maxPrice)){
-                        alert_list.push(item);
+                    if(parseFloat(item.price) <= parseInt(task.maxPrice)){
+                        let alertItem = {};
+                        alertItem.task = task;
+                        alertItem.item = item;
+                        alert_list.push(alertItem);
                     }
-                });
-                if(alert_list.length > 0){
-                    mailSender.send(alert_list,task.receivers);
-                }  
+                }); 
             });
+            if(alert_list.length > 0){
+                let mailPool = {};
+                let alertPool = {};
+                alert_list.forEach( alertItem => {
+                    let receivers = alertItem.task.receivers;
+                    if(!receivers || receivers.length === 0){
+                        receivers = receiverDAO.findAll();
+                    }
+                    receivers.forEach(receiver => {
+                        if(!mailPool[receiver.mail]){
+                            mailPool[receiver.mail] = [];
+                        }
+                        mailPool[receiver.mail].push(alertItem);
+                    });
+                });
+                mailSender.send(mailPool);
+            } 
         }).catch( err =>{
             console.error('execute automation failed');
         });
