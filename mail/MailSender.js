@@ -28,10 +28,23 @@ function MailSender(){
                 title += alertItem.task.exterior.name + ' | ';
                 title += '售价: ' + alertItem.item.price + ' | ';
                 title += '磨损度: ' + alertItem.item.exterior + ' | ';
-                title += '(低于警示价:' + (parseFloat(alertItem.task.maxPrice) - parseFloat(alertItem.item.price)).toFixed(2) + ' 低于市场平均价: ' + (parseFloat(alertItem.item.marketAvgPrice) - parseFloat(alertItem.item.price)).toFixed(2) + ' 折扣:' + (parseFloat(alertItem.item.price)/parseFloat(alertItem.item.marketAvgPrice)).toFixed(2) +')';
+                let discount = (parseFloat(alertItem.item.price)/parseFloat(alertItem.item.marketAvgPrice)).toFixed(2);
+                title += '(低于警示价:' + (parseFloat(alertItem.task.maxPrice) - parseFloat(alertItem.item.price)).toFixed(2) + ' 低于市场平均价: ' + (parseFloat(alertItem.item.marketAvgPrice) - parseFloat(alertItem.item.price)).toFixed(2) + ' 折扣:' + discount +')';
                 
                 if(!existInMailHistory(receiver,title)){
-                    elements.push('<li><a href="'+ alertItem.item.href +'">'+ title +'</a></li>');
+                    let fontColor = 'black';
+                    switch(discount){
+                        case discount < 0.8 :
+                            fontColor = 'red';
+                            break;
+                        case discount < 0.85 :
+                            fontColor = 'orange';
+                            break;
+                        default:
+                            fontColor = 'black';
+                            break;
+                    }
+                    elements.push('<li><a style="color:' + fontColor + '" href="'+ alertItem.item.href +'">'+ title +'</a></li>');
                     mailDAO.addMailHistory(receiver,title);
                 }
             });
