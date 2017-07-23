@@ -50,8 +50,8 @@ function MailSender(){
 
     function existInMailHistory(receiver,content){
         let history = mailDAO.getMailHistory(receiver);
-        for(let history_content in history){
-            if(history_content === content){
+        for(let index in history){
+            if(history[index] === content){
                 return true;
             }
         }
