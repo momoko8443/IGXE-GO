@@ -101,9 +101,18 @@ function Automation() {
                 console.error('can not load steam login page');
                 reject();
             });
-            this.driver.findElement(By.id('steamAccountName')).sendKeys(steam.username);
-            this.driver.findElement(By.id('steamPassword')).sendKeys(steam.password);
-            this.driver.findElement(By.id('imageLogin')).click();
+            this.driver.findElement(By.id('steamAccountName')).sendKeys(steam.username).catch( err => {
+                console.error('login failed');
+                reject();
+            } );
+            this.driver.findElement(By.id('steamPassword')).sendKeys(steam.password).catch( err => {
+                console.error('login failed');
+                reject();
+            });
+            this.driver.findElement(By.id('imageLogin')).click().catch( err => {
+                console.error('login failed');
+                reject();
+            });
             this.driver.wait(until.titleContains('csgo'), 30000).then(result => {
                 console.log('login success');
                 resolve(result);
