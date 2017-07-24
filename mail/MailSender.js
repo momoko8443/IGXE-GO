@@ -48,16 +48,18 @@ function MailSender(){
                     mailDAO.addMailHistory(receiver,title);
                 }
             });
-            let html_body = '<ul>'+ elements.join(' ') +'</ul>';
-            let from = '"IGXE-AUTO" <' + smtp.username  + '>';
-            let mailOptions = {
-                from: from, // sender address
-                to: receiver, // list of receivers
-                subject: '[Low Price Reminder] 有新低价武器出现 ', // Subject line
-                text: '有新低价武器出现', // plain text body
-                html: html_body // html body
-            };
-            sendMail(mailOptions);
+            if(elements.length > 0){
+                let html_body = '<ul>'+ elements.join(' ') +'</ul>';
+                let from = '"IGXE-AUTO" <' + smtp.username  + '>';
+                let mailOptions = {
+                    from: from, // sender address
+                    to: receiver, // list of receivers
+                    subject: '[Low Price Reminder] 有新低价武器出现 ', // Subject line
+                    text: '有新低价武器出现', // plain text body
+                    html: html_body // html body
+                };
+                sendMail(mailOptions);
+            }
         }
     };
 
