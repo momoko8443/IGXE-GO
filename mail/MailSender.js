@@ -28,8 +28,8 @@ function MailSender(){
                 title += alertItem.task.exterior.name + ' | ';
                 title += '售价: ' + alertItem.item.price + ' | ';
                 title += '磨损度: ' + alertItem.item.exterior + ' | ';
-                let discount = (parseFloat(alertItem.item.price)/parseFloat(alertItem.item.marketAvgPrice)).toFixed(2);
-                title += '(低于警示价:' + (parseFloat(alertItem.task.maxPrice) - parseFloat(alertItem.item.price)).toFixed(2) + ' 低于市场平均价: ' + (parseFloat(alertItem.item.marketAvgPrice) - parseFloat(alertItem.item.price)).toFixed(2) + ' 折扣:' + discount +')';
+                let discount = parseFloat(alertItem.item.price)/parseFloat(alertItem.item.marketAvgPrice);
+                title += '(低于警示价:' + (parseFloat(alertItem.task.maxPrice) - parseFloat(alertItem.item.price)).toFixed(2) + ' 低于市场平均价: ' + (parseFloat(alertItem.item.marketAvgPrice) - parseFloat(alertItem.item.price)).toFixed(2) + ' 折扣:' + discount.toFixed(2) +')';
                 
                 if(!existInMailHistory(receiver,title)){
                     let fontColor = 'black';
