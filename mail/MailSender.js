@@ -33,7 +33,7 @@ function MailSender(){
                 
                 if(!existInMailHistory(receiver,title)){
                     let fontColor = 'black';
-                    switch(discount){
+                    switch(true){
                         case discount < 0.8 :
                             fontColor = 'red';
                             break;
