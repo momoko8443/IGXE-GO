@@ -24,6 +24,7 @@ function Automation() {
                 resolve();
             }).catch(err=>{
                 console.error('search weapons failed');
+                this.driver.quit();
                 reject();
             });
             function doAsyncSeries(tasks) {
