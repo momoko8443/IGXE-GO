@@ -30,13 +30,15 @@ function AutomationController(){
             //console.log(searchURL);
             _tasks.push({'_id':task._id,'url':searchURL});
         });
-        automation.execute(_tasks).then(()=>{
+        let date = new date();
+        date = date.getTime();
+        automation.execute(_tasks,date).then(()=>{
             console.info('run automation successfully');
             let tasks = taskDAO.findAllRunning();
             let alert_list = [];
             tasks.forEach(function(task) {
                 task.result.forEach((item) => {
-                    if(parseFloat(item.price) <= parseInt(task.maxPrice)){
+                    if(item.date === date && parseFloat(item.price) <= parseInt(task.maxPrice)){
                         let alertItem = {};
                         alertItem.task = task;
                         alertItem.item = item;
