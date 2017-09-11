@@ -8,7 +8,7 @@ function TaskDAO() {
         return this.db.get('tasks').value();
     };
     this.find = function(taskId) {
-        return this.db.get('tasks').find({'_id':id}).value();
+        return this.db.get('tasks').find({'_id':taskId}).value();
     };
     this.findAllRunning = function(){
         return this.db.get('tasks').filter({'isRunning': true}).value();
