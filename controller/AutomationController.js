@@ -30,7 +30,7 @@ function AutomationController(){
             //console.log(searchURL);
             _tasks.push({'_id':task._id,'url':searchURL});
         });
-        let date = new date();
+        let date = new Date();
         date = date.getTime();
         automation.execute(_tasks,date).then(()=>{
             console.info('run automation successfully');
