@@ -120,6 +120,90 @@
           "marketAvgPrice": "200.21",
           "exterior": " 0.08383037149906 ",
           "date": 1506500400019
+        },
+        {
+          "price": "170.00",
+          "href": "https://www.igxe.cn/product-110956545",
+          "marketAvgPrice": "200.21",
+          "exterior": " 0.12777367234230 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "170.00",
+          "href": "https://www.igxe.cn/product-111781439",
+          "marketAvgPrice": "200.21",
+          "exterior": " 0.09849369525909 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "185.00",
+          "href": "https://www.igxe.cn/product-109743490",
+          "marketAvgPrice": "200.21",
+          "exterior": " 0.13090215623379 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "185.00",
+          "href": "https://www.igxe.cn/product-107498395",
+          "marketAvgPrice": "200.21",
+          "exterior": " 0.09168198704720 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "185.00",
+          "href": "https://www.igxe.cn/product-109022396",
+          "marketAvgPrice": "200.21",
+          "exterior": " 0.11821728944778 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "185.62",
+          "href": "https://www.igxe.cn/product-109636574",
+          "marketAvgPrice": "200.21",
+          "exterior": " 读取中............ ",
+          "date": 1506503400018
+        },
+        {
+          "price": "229.00",
+          "href": "https://www.igxe.cn/product-111785801",
+          "marketAvgPrice": "200.21",
+          "exterior": " 0.08039354532957 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "239.82",
+          "href": "https://www.igxe.cn/product-111619406",
+          "marketAvgPrice": "200.21",
+          "exterior": " 0.10623653233051 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "250.34",
+          "href": "https://www.igxe.cn/product-109743492",
+          "marketAvgPrice": "200.21",
+          "exterior": " 0.09030997008085 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "280.00",
+          "href": "https://www.igxe.cn/product-111229928",
+          "marketAvgPrice": "200.21",
+          "exterior": " 0.08968652784824 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "300.00",
+          "href": "https://www.igxe.cn/product-111792904",
+          "marketAvgPrice": "200.21",
+          "exterior": " 0.07208780944347 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "395.00",
+          "href": "https://www.igxe.cn/product-108998406",
+          "marketAvgPrice": "200.21",
+          "exterior": " 0.08383037149906 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -194,6 +278,41 @@
           "marketAvgPrice": "188.60",
           "exterior": " 0.06679020822048 ",
           "date": 1506500400019
+        },
+        {
+          "price": "167.48",
+          "href": "https://www.igxe.cn/product-111845945",
+          "marketAvgPrice": "188.60",
+          "exterior": " 0.06995046138763 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "167.49",
+          "href": "https://www.igxe.cn/product-111281528",
+          "marketAvgPrice": "188.60",
+          "exterior": " 0.05767463892698 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "167.90",
+          "href": "https://www.igxe.cn/product-110877503",
+          "marketAvgPrice": "188.60",
+          "exterior": " 0.05656361579895 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "193.00",
+          "href": "https://www.igxe.cn/product-111044146",
+          "marketAvgPrice": "188.60",
+          "exterior": " 0.06030346080661 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "193.00",
+          "href": "https://www.igxe.cn/product-110713328",
+          "marketAvgPrice": "188.60",
+          "exterior": " 0.06679020822048 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -254,6 +373,27 @@
           "marketAvgPrice": "86.59",
           "exterior": " 0.42915144562721 ",
           "date": 1506500400019
+        },
+        {
+          "price": "90.00",
+          "href": "https://www.igxe.cn/product-111006873",
+          "marketAvgPrice": "86.59",
+          "exterior": " 0.44961822032928 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "90.00",
+          "href": "https://www.igxe.cn/product-111552406",
+          "marketAvgPrice": "86.59",
+          "exterior": " 0.43833786249161 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "96.90",
+          "href": "https://www.igxe.cn/product-111230014",
+          "marketAvgPrice": "86.59",
+          "exterior": " 0.42915144562721 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -300,6 +440,13 @@
           "marketAvgPrice": "234.59",
           "exterior": " 0.09668818861246 ",
           "date": 1506500400019
+        },
+        {
+          "price": "179.50",
+          "href": "https://www.igxe.cn/product-111860439",
+          "marketAvgPrice": "234.59",
+          "exterior": " 0.09668818861246 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -423,6 +570,90 @@
           "marketAvgPrice": "234.26",
           "exterior": " 读取中............ ",
           "date": 1506500400019
+        },
+        {
+          "price": "200.00",
+          "href": "https://www.igxe.cn/product-111855973",
+          "marketAvgPrice": "234.26",
+          "exterior": " 0.04141877219081 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "200.07",
+          "href": "https://www.igxe.cn/product-111853235",
+          "marketAvgPrice": "234.26",
+          "exterior": " 0.02585261501372 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "219.49",
+          "href": "https://www.igxe.cn/product-110364953",
+          "marketAvgPrice": "234.26",
+          "exterior": " 0.03991132229567 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "221.00",
+          "href": "https://www.igxe.cn/product-111653490",
+          "marketAvgPrice": "234.26",
+          "exterior": " 0.04757146164775 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "222.00",
+          "href": "https://www.igxe.cn/product-111815482",
+          "marketAvgPrice": "234.26",
+          "exterior": " 0.02820445410907 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "222.00",
+          "href": "https://www.igxe.cn/product-111595434",
+          "marketAvgPrice": "234.26",
+          "exterior": " 0.05198040232062 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "224.00",
+          "href": "https://www.igxe.cn/product-111216830",
+          "marketAvgPrice": "234.26",
+          "exterior": " 0.02735480107367 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "230.00",
+          "href": "https://www.igxe.cn/product-111072878",
+          "marketAvgPrice": "234.26",
+          "exterior": " 0.02915111742914 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "250.00",
+          "href": "https://www.igxe.cn/product-111730323",
+          "marketAvgPrice": "234.26",
+          "exterior": " 0.03360144048929 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "278.00",
+          "href": "https://www.igxe.cn/product-111533335",
+          "marketAvgPrice": "234.26",
+          "exterior": " 0.01265344023705 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "320.00",
+          "href": "https://www.igxe.cn/product-110494246",
+          "marketAvgPrice": "234.26",
+          "exterior": " 0.01677341572940 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "350.00",
+          "href": "https://www.igxe.cn/product-111423411",
+          "marketAvgPrice": "234.26",
+          "exterior": " 读取中............ ",
+          "date": 1506503400018
         }
       ]
     },
@@ -490,6 +721,34 @@
           "marketAvgPrice": "579.88",
           "exterior": " 0.06881967186928 ",
           "date": 1506500400019
+        },
+        {
+          "price": "480.00",
+          "href": "https://www.igxe.cn/product-111314325",
+          "marketAvgPrice": "579.88",
+          "exterior": " 0.04464041814208 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "490.00",
+          "href": "https://www.igxe.cn/product-111046278",
+          "marketAvgPrice": "579.88",
+          "exterior": " 0.06767615675926 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "600.00",
+          "href": "https://www.igxe.cn/product-111250162",
+          "marketAvgPrice": "579.88",
+          "exterior": " 0.04804814234376 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "600.00",
+          "href": "https://www.igxe.cn/product-111617906",
+          "marketAvgPrice": "579.88",
+          "exterior": " 0.06881967186928 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -651,6 +910,83 @@
           "marketAvgPrice": "568.74",
           "exterior": " 0.05683054402471 ",
           "date": 1506500400019
+        },
+        {
+          "price": "444.50",
+          "href": "https://www.igxe.cn/product-111883715",
+          "marketAvgPrice": "568.74",
+          "exterior": " 0.04493622109294 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "449.50",
+          "href": "https://www.igxe.cn/product-108803496",
+          "marketAvgPrice": "568.74",
+          "exterior": " 0.06990100443363 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "488.88",
+          "href": "https://www.igxe.cn/product-111852042",
+          "marketAvgPrice": "568.74",
+          "exterior": " 0.03310774266720 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "489.00",
+          "href": "https://www.igxe.cn/product-110663897",
+          "marketAvgPrice": "568.74",
+          "exterior": " 0.04381627589464 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "508.00",
+          "href": "https://www.igxe.cn/product-109767070",
+          "marketAvgPrice": "568.74",
+          "exterior": " 0.03791868686676 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "508.50",
+          "href": "https://www.igxe.cn/product-108799004",
+          "marketAvgPrice": "568.74",
+          "exterior": " 0.06262243539095 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "509.00",
+          "href": "https://www.igxe.cn/product-108056892",
+          "marketAvgPrice": "568.74",
+          "exterior": " 0.05611276254058 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "520.00",
+          "href": "https://www.igxe.cn/product-109205815",
+          "marketAvgPrice": "568.74",
+          "exterior": " 0.03779396042228 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "599.00",
+          "href": "https://www.igxe.cn/product-106994804",
+          "marketAvgPrice": "568.74",
+          "exterior": " 0.02237941697240 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "600.00",
+          "href": "https://www.igxe.cn/product-111703429",
+          "marketAvgPrice": "568.74",
+          "exterior": " 0.02628509700298 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "850.00",
+          "href": "https://www.igxe.cn/product-111593457",
+          "marketAvgPrice": "568.74",
+          "exterior": " 0.05683054402471 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -718,6 +1054,34 @@
           "marketAvgPrice": "579.88",
           "exterior": " 0.06881967186928 ",
           "date": 1506500400019
+        },
+        {
+          "price": "480.00",
+          "href": "https://www.igxe.cn/product-111314325",
+          "marketAvgPrice": "579.88",
+          "exterior": " 0.04464041814208 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "490.00",
+          "href": "https://www.igxe.cn/product-111046278",
+          "marketAvgPrice": "579.88",
+          "exterior": " 0.06767615675926 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "600.00",
+          "href": "https://www.igxe.cn/product-111250162",
+          "marketAvgPrice": "579.88",
+          "exterior": " 0.04804814234376 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "600.00",
+          "href": "https://www.igxe.cn/product-111617906",
+          "marketAvgPrice": "579.88",
+          "exterior": " 0.06881967186928 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -813,6 +1177,62 @@
           "marketAvgPrice": "574.68",
           "exterior": " 0.11795039474964 ",
           "date": 1506500400019
+        },
+        {
+          "price": "505.00",
+          "href": "https://www.igxe.cn/product-111315294",
+          "marketAvgPrice": "574.68",
+          "exterior": " 0.10807471722364 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "585.00",
+          "href": "https://www.igxe.cn/product-111401390",
+          "marketAvgPrice": "574.68",
+          "exterior": " 0.08644732087851 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "588.00",
+          "href": "https://www.igxe.cn/product-108549505",
+          "marketAvgPrice": "574.68",
+          "exterior": " 0.08499465882778 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "590.00",
+          "href": "https://www.igxe.cn/product-106897044",
+          "marketAvgPrice": "574.68",
+          "exterior": " 0.13291454315186 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "600.00",
+          "href": "https://www.igxe.cn/product-107854083",
+          "marketAvgPrice": "574.68",
+          "exterior": " 0.09057268500328 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "680.00",
+          "href": "https://www.igxe.cn/product-111828916",
+          "marketAvgPrice": "574.68",
+          "exterior": " 0.13665182888508 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "800.00",
+          "href": "https://www.igxe.cn/product-111773869",
+          "marketAvgPrice": "574.68",
+          "exterior": " 0.13773651421070 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1149.00",
+          "href": "https://www.igxe.cn/product-110982692",
+          "marketAvgPrice": "574.68",
+          "exterior": " 0.11795039474964 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -936,6 +1356,90 @@
           "marketAvgPrice": "393.33",
           "exterior": " 0.25303089618683 ",
           "date": 1506500400019
+        },
+        {
+          "price": "338.00",
+          "href": "https://www.igxe.cn/product-111788460",
+          "marketAvgPrice": "393.33",
+          "exterior": " 0.31454101204872 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "338.50",
+          "href": "https://www.igxe.cn/product-111702247",
+          "marketAvgPrice": "393.33",
+          "exterior": " 0.24013462662697 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "340.00",
+          "href": "https://www.igxe.cn/product-111536304",
+          "marketAvgPrice": "393.33",
+          "exterior": " 0.32854846119881 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "340.00",
+          "href": "https://www.igxe.cn/product-111854807",
+          "marketAvgPrice": "393.33",
+          "exterior": " 0.30583453178406 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "359.50",
+          "href": "https://www.igxe.cn/product-111329323",
+          "marketAvgPrice": "393.33",
+          "exterior": " 0.26198822259903 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "360.50",
+          "href": "https://www.igxe.cn/product-109535913",
+          "marketAvgPrice": "393.33",
+          "exterior": " 读取中............ ",
+          "date": 1506503400018
+        },
+        {
+          "price": "366.00",
+          "href": "https://www.igxe.cn/product-111216137",
+          "marketAvgPrice": "393.33",
+          "exterior": " 0.24724306166172 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "368.88",
+          "href": "https://www.igxe.cn/product-111693502",
+          "marketAvgPrice": "393.33",
+          "exterior": " 0.23158940672874 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "370.00",
+          "href": "https://www.igxe.cn/product-111799751",
+          "marketAvgPrice": "393.33",
+          "exterior": " 0.22500777244568 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "380.00",
+          "href": "https://www.igxe.cn/product-110551626",
+          "marketAvgPrice": "393.33",
+          "exterior": " 0.15585798025131 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "380.00",
+          "href": "https://www.igxe.cn/product-108346961",
+          "marketAvgPrice": "393.33",
+          "exterior": " 读取中............ ",
+          "date": 1506503400018
+        },
+        {
+          "price": "380.81",
+          "href": "https://www.igxe.cn/product-111799409",
+          "marketAvgPrice": "393.33",
+          "exterior": " 0.33689945936203 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -1058,6 +1562,13 @@
           "marketAvgPrice": "183.97",
           "exterior": " 0.41850534081459 ",
           "date": 1506500400019
+        },
+        {
+          "price": "160.00",
+          "href": "https://www.igxe.cn/product-111814821",
+          "marketAvgPrice": "183.97",
+          "exterior": " 0.41850534081459 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -1187,6 +1698,20 @@
           "marketAvgPrice": "3827.63",
           "exterior": " 0.01902759633958 ",
           "date": 1506500400019
+        },
+        {
+          "price": "4000.00",
+          "href": "https://www.igxe.cn/product-110551878",
+          "marketAvgPrice": "3827.63",
+          "exterior": " 0.06430254876614 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "4999.00",
+          "href": "https://www.igxe.cn/product-111551053",
+          "marketAvgPrice": "3827.63",
+          "exterior": " 0.01902759633958 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -1261,6 +1786,41 @@
           "marketAvgPrice": "1279.33",
           "exterior": " 0.08259039372206 ",
           "date": 1506500400019
+        },
+        {
+          "price": "1350.00",
+          "href": "https://www.igxe.cn/product-111897503",
+          "marketAvgPrice": "1279.33",
+          "exterior": " 0.14001095294952 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1439.00",
+          "href": "https://www.igxe.cn/product-111854965",
+          "marketAvgPrice": "1279.33",
+          "exterior": " 0.08334028720856 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1448.00",
+          "href": "https://www.igxe.cn/product-111596665",
+          "marketAvgPrice": "1279.33",
+          "exterior": " 0.12156368792057 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1880.00",
+          "href": "https://www.igxe.cn/product-109903282",
+          "marketAvgPrice": "1279.33",
+          "exterior": " 0.09872902929783 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "2299.00",
+          "href": "https://www.igxe.cn/product-110459428",
+          "marketAvgPrice": "1279.33",
+          "exterior": " 0.08259039372206 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -1349,6 +1909,55 @@
           "marketAvgPrice": "454.28",
           "exterior": " 0.23765167593956 ",
           "date": 1506500400019
+        },
+        {
+          "price": "440.00",
+          "href": "https://www.igxe.cn/product-111849443",
+          "marketAvgPrice": "454.28",
+          "exterior": " 0.31798163056374 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "440.00",
+          "href": "https://www.igxe.cn/product-110900208",
+          "marketAvgPrice": "454.28",
+          "exterior": " 0.29176959395409 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "444.50",
+          "href": "https://www.igxe.cn/product-111594966",
+          "marketAvgPrice": "454.28",
+          "exterior": " 0.30534005165100 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "445.00",
+          "href": "https://www.igxe.cn/product-111670584",
+          "marketAvgPrice": "454.28",
+          "exterior": " 0.32897895574570 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "459.00",
+          "href": "https://www.igxe.cn/product-111155326",
+          "marketAvgPrice": "454.28",
+          "exterior": " 0.24419245123863 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "480.00",
+          "href": "https://www.igxe.cn/product-111840554",
+          "marketAvgPrice": "454.28",
+          "exterior": " 0.23075379431248 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "650.00",
+          "href": "https://www.igxe.cn/product-110580563",
+          "marketAvgPrice": "454.28",
+          "exterior": " 0.23765167593956 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -1548,6 +2157,90 @@
           "marketAvgPrice": "406.12",
           "exterior": " 0.02166738174856 ",
           "date": 1506500400019
+        },
+        {
+          "price": "372.00",
+          "href": "https://www.igxe.cn/product-111812255",
+          "marketAvgPrice": "406.12",
+          "exterior": " 0.06074558198452 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "372.00",
+          "href": "https://www.igxe.cn/product-111812254",
+          "marketAvgPrice": "406.12",
+          "exterior": " 0.06976904720068 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "373.00",
+          "href": "https://www.igxe.cn/product-111004919",
+          "marketAvgPrice": "406.12",
+          "exterior": " 0.06234402582049 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "373.00",
+          "href": "https://www.igxe.cn/product-111293263",
+          "marketAvgPrice": "406.12",
+          "exterior": " 0.06443803757429 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "373.00",
+          "href": "https://www.igxe.cn/product-111293739",
+          "marketAvgPrice": "406.12",
+          "exterior": " 0.05825912952423 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "375.00",
+          "href": "https://www.igxe.cn/product-111410976",
+          "marketAvgPrice": "406.12",
+          "exterior": " 0.05819965153933 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "382.00",
+          "href": "https://www.igxe.cn/product-111485343",
+          "marketAvgPrice": "406.12",
+          "exterior": " 0.05540196225047 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "405.00",
+          "href": "https://www.igxe.cn/product-110163289",
+          "marketAvgPrice": "406.12",
+          "exterior": " 0.06621797382832 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "408.00",
+          "href": "https://www.igxe.cn/product-111792722",
+          "marketAvgPrice": "406.12",
+          "exterior": " 0.05321119725704 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "600.00",
+          "href": "https://www.igxe.cn/product-111833324",
+          "marketAvgPrice": "406.12",
+          "exterior": " 0.02503686584532 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "630.00",
+          "href": "https://www.igxe.cn/product-111429912",
+          "marketAvgPrice": "406.12",
+          "exterior": " 0.02833718433976 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "715.00",
+          "href": "https://www.igxe.cn/product-111097412",
+          "marketAvgPrice": "406.12",
+          "exterior": " 0.02166738174856 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -1657,6 +2350,76 @@
           "marketAvgPrice": "281.39",
           "exterior": " 0.07029746472836 ",
           "date": 1506500400019
+        },
+        {
+          "price": "239.99",
+          "href": "https://www.igxe.cn/product-111895090",
+          "marketAvgPrice": "281.39",
+          "exterior": " 0.12253340333700 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "245.00",
+          "href": "https://www.igxe.cn/product-111770242",
+          "marketAvgPrice": "281.39",
+          "exterior": " 0.13500991463661 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "275.00",
+          "href": "https://www.igxe.cn/product-110182914",
+          "marketAvgPrice": "281.39",
+          "exterior": " 读取中............ ",
+          "date": 1506503400018
+        },
+        {
+          "price": "278.17",
+          "href": "https://www.igxe.cn/product-110817150",
+          "marketAvgPrice": "281.39",
+          "exterior": " 0.09557939320803 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "281.38",
+          "href": "https://www.igxe.cn/product-110981088",
+          "marketAvgPrice": "281.39",
+          "exterior": " 0.10234634578228 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "289.50",
+          "href": "https://www.igxe.cn/product-110764551",
+          "marketAvgPrice": "281.39",
+          "exterior": " 0.12346300482750 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "290.00",
+          "href": "https://www.igxe.cn/product-109039702",
+          "marketAvgPrice": "281.39",
+          "exterior": " 0.12039980292320 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "295.00",
+          "href": "https://www.igxe.cn/product-110688680",
+          "marketAvgPrice": "281.39",
+          "exterior": " 0.07337186485529 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "298.00",
+          "href": "https://www.igxe.cn/product-110657049",
+          "marketAvgPrice": "281.39",
+          "exterior": " 0.09573212265968 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "300.00",
+          "href": "https://www.igxe.cn/product-111255662",
+          "marketAvgPrice": "281.39",
+          "exterior": " 0.07029746472836 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -1780,6 +2543,90 @@
           "marketAvgPrice": "847.44",
           "exterior": " 读取中............ ",
           "date": 1506500400019
+        },
+        {
+          "price": "687.50",
+          "href": "https://www.igxe.cn/product-111916697",
+          "marketAvgPrice": "847.44",
+          "exterior": " 0.09965437650681 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "698.00",
+          "href": "https://www.igxe.cn/product-111615165",
+          "marketAvgPrice": "847.44",
+          "exterior": " 0.13012470304966 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "700.00",
+          "href": "https://www.igxe.cn/product-111795907",
+          "marketAvgPrice": "847.44",
+          "exterior": " 0.14911662042141 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "719.50",
+          "href": "https://www.igxe.cn/product-110706106",
+          "marketAvgPrice": "847.44",
+          "exterior": " 0.13754147291183 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "780.00",
+          "href": "https://www.igxe.cn/product-109627386",
+          "marketAvgPrice": "847.44",
+          "exterior": " 0.10188563913107 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "790.00",
+          "href": "https://www.igxe.cn/product-108228649",
+          "marketAvgPrice": "847.44",
+          "exterior": " 读取中............ ",
+          "date": 1506503400018
+        },
+        {
+          "price": "799.00",
+          "href": "https://www.igxe.cn/product-107030947",
+          "marketAvgPrice": "847.44",
+          "exterior": " 0.13499990105629 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "800.00",
+          "href": "https://www.igxe.cn/product-109067580",
+          "marketAvgPrice": "847.44",
+          "exterior": " 0.13550314307213 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "839.00",
+          "href": "https://www.igxe.cn/product-111785795",
+          "marketAvgPrice": "847.44",
+          "exterior": " 0.08158241957426 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "842.49",
+          "href": "https://www.igxe.cn/product-105320781",
+          "marketAvgPrice": "847.44",
+          "exterior": " 0.12468256056309 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "859.95",
+          "href": "https://www.igxe.cn/product-105248640",
+          "marketAvgPrice": "847.44",
+          "exterior": " 读取中............ ",
+          "date": 1506503400018
+        },
+        {
+          "price": "866.00",
+          "href": "https://www.igxe.cn/product-107507055",
+          "marketAvgPrice": "847.44",
+          "exterior": " 读取中............ ",
+          "date": 1506503400018
         }
       ]
     },
@@ -1861,6 +2708,48 @@
           "marketAvgPrice": "533.87",
           "exterior": " 0.28180634975433 ",
           "date": 1506500400019
+        },
+        {
+          "price": "435.00",
+          "href": "https://www.igxe.cn/product-111486768",
+          "marketAvgPrice": "533.87",
+          "exterior": " 0.28335893154144 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "440.00",
+          "href": "https://www.igxe.cn/product-111732083",
+          "marketAvgPrice": "533.87",
+          "exterior": " 0.26473045349121 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "449.50",
+          "href": "https://www.igxe.cn/product-110206607",
+          "marketAvgPrice": "533.87",
+          "exterior": " 0.35892561078072 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "483.00",
+          "href": "https://www.igxe.cn/product-109451583",
+          "marketAvgPrice": "533.87",
+          "exterior": " 0.25607699155807 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "500.00",
+          "href": "https://www.igxe.cn/product-109331792",
+          "marketAvgPrice": "533.87",
+          "exterior": " 0.23411266505718 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "562.49",
+          "href": "https://www.igxe.cn/product-107993469",
+          "marketAvgPrice": "533.87",
+          "exterior": " 0.28180634975433 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -1963,6 +2852,69 @@
           "marketAvgPrice": "2139.36",
           "exterior": " 0.01521106436849 ",
           "date": 1506500400019
+        },
+        {
+          "price": "1530.00",
+          "href": "https://www.igxe.cn/product-111160024",
+          "marketAvgPrice": "2139.36",
+          "exterior": " 0.06992718577385 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1540.00",
+          "href": "https://www.igxe.cn/product-111642407",
+          "marketAvgPrice": "2139.36",
+          "exterior": " 0.06988884508610 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1710.00",
+          "href": "https://www.igxe.cn/product-111694290",
+          "marketAvgPrice": "2139.36",
+          "exterior": " 0.05033395439386 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1850.00",
+          "href": "https://www.igxe.cn/product-111920309",
+          "marketAvgPrice": "2139.36",
+          "exterior": " 0.06872775405645 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1900.00",
+          "href": "https://www.igxe.cn/product-111163959",
+          "marketAvgPrice": "2139.36",
+          "exterior": " 0.06974510848522 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1900.00",
+          "href": "https://www.igxe.cn/product-111442228",
+          "marketAvgPrice": "2139.36",
+          "exterior": " 0.04904315620661 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1999.00",
+          "href": "https://www.igxe.cn/product-111819496",
+          "marketAvgPrice": "2139.36",
+          "exterior": " 0.04960440099239 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "3286.00",
+          "href": "https://www.igxe.cn/product-111682347",
+          "marketAvgPrice": "2139.36",
+          "exterior": " 0.02065428346395 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "3500.00",
+          "href": "https://www.igxe.cn/product-111861957",
+          "marketAvgPrice": "2139.36",
+          "exterior": " 0.01521106436849 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -2086,6 +3038,90 @@
           "marketAvgPrice": "498.78",
           "exterior": " 0.09883897751570 ",
           "date": 1506500400019
+        },
+        {
+          "price": "410.00",
+          "href": "https://www.igxe.cn/product-111817789",
+          "marketAvgPrice": "498.78",
+          "exterior": " 0.12698578834534 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "419.00",
+          "href": "https://www.igxe.cn/product-111607602",
+          "marketAvgPrice": "498.78",
+          "exterior": " 0.10457678139210 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "419.50",
+          "href": "https://www.igxe.cn/product-110971637",
+          "marketAvgPrice": "498.78",
+          "exterior": " 0.13026230037212 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "420.00",
+          "href": "https://www.igxe.cn/product-110852985",
+          "marketAvgPrice": "498.78",
+          "exterior": " 0.10997451841831 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "429.00",
+          "href": "https://www.igxe.cn/product-111727453",
+          "marketAvgPrice": "498.78",
+          "exterior": " 0.08802962303162 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "429.00",
+          "href": "https://www.igxe.cn/product-111727452",
+          "marketAvgPrice": "498.78",
+          "exterior": " 0.09687242656946 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "430.00",
+          "href": "https://www.igxe.cn/product-111595391",
+          "marketAvgPrice": "498.78",
+          "exterior": " 0.08700973540545 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "430.00",
+          "href": "https://www.igxe.cn/product-111531540",
+          "marketAvgPrice": "498.78",
+          "exterior": " 0.11778008937836 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "440.50",
+          "href": "https://www.igxe.cn/product-109185475",
+          "marketAvgPrice": "498.78",
+          "exterior": " 0.10612270981073 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "480.00",
+          "href": "https://www.igxe.cn/product-111925433",
+          "marketAvgPrice": "498.78",
+          "exterior": " 0.10532967746258 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "480.00",
+          "href": "https://www.igxe.cn/product-111774521",
+          "marketAvgPrice": "498.78",
+          "exterior": " 0.09152837842703 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "480.00",
+          "href": "https://www.igxe.cn/product-111143595",
+          "marketAvgPrice": "498.78",
+          "exterior": " 0.08424503356218 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -2139,6 +3175,20 @@
           "marketAvgPrice": "1864.78",
           "exterior": " 0.06987481564283 ",
           "date": 1506500400019
+        },
+        {
+          "price": "1868.00",
+          "href": "https://www.igxe.cn/product-109364848",
+          "marketAvgPrice": "1864.78",
+          "exterior": " 0.06780602782965 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1876.00",
+          "href": "https://www.igxe.cn/product-110114512",
+          "marketAvgPrice": "1864.78",
+          "exterior": " 0.06987481564283 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -2220,6 +3270,48 @@
           "marketAvgPrice": "500.26",
           "exterior": " 读取中............ ",
           "date": 1506500400019
+        },
+        {
+          "price": "461.88",
+          "href": "https://www.igxe.cn/product-110715831",
+          "marketAvgPrice": "500.26",
+          "exterior": " 0.11103308200836 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "530.00",
+          "href": "https://www.igxe.cn/product-106788730",
+          "marketAvgPrice": "500.26",
+          "exterior": " 0.13696961104870 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "560.00",
+          "href": "https://www.igxe.cn/product-111575782",
+          "marketAvgPrice": "500.26",
+          "exterior": " 0.12048214673996 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "641.00",
+          "href": "https://www.igxe.cn/product-108123448",
+          "marketAvgPrice": "500.26",
+          "exterior": " 0.11979709565639 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "666.00",
+          "href": "https://www.igxe.cn/product-111889671",
+          "marketAvgPrice": "500.26",
+          "exterior": " 0.08900804817677 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "900.00",
+          "href": "https://www.igxe.cn/product-111673889",
+          "marketAvgPrice": "500.26",
+          "exterior": " 读取中............ ",
+          "date": 1506503400018
         }
       ]
     },
@@ -2294,6 +3386,41 @@
           "marketAvgPrice": "299.58",
           "exterior": " 0.25420597195625 ",
           "date": 1506500400019
+        },
+        {
+          "price": "298.99",
+          "href": "https://www.igxe.cn/product-111058968",
+          "marketAvgPrice": "299.58",
+          "exterior": " 0.26852780580521 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "300.00",
+          "href": "https://www.igxe.cn/product-110612171",
+          "marketAvgPrice": "299.58",
+          "exterior": " 0.32922476530075 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "300.00",
+          "href": "https://www.igxe.cn/product-111450453",
+          "marketAvgPrice": "299.58",
+          "exterior": " 0.36469745635986 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "350.00",
+          "href": "https://www.igxe.cn/product-110049825",
+          "marketAvgPrice": "299.58",
+          "exterior": " 0.29269593954086 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "369.00",
+          "href": "https://www.igxe.cn/product-109867253",
+          "marketAvgPrice": "299.58",
+          "exterior": " 0.25420597195625 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -2423,6 +3550,20 @@
           "marketAvgPrice": "116.53",
           "exterior": " 读取中............ ",
           "date": 1506500400019
+        },
+        {
+          "price": "94.00",
+          "href": "https://www.igxe.cn/product-111365069",
+          "marketAvgPrice": "116.53",
+          "exterior": " 0.10089957714081 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "98.00",
+          "href": "https://www.igxe.cn/product-111501557",
+          "marketAvgPrice": "116.53",
+          "exterior": " 读取中............ ",
+          "date": 1506503400018
         }
       ]
     },
@@ -2525,6 +3666,69 @@
           "marketAvgPrice": "213.48",
           "exterior": " 0.03435739129782 ",
           "date": 1506500400019
+        },
+        {
+          "price": "165.49",
+          "href": "https://www.igxe.cn/product-111178010",
+          "marketAvgPrice": "213.48",
+          "exterior": " 0.05245275422931 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "165.99",
+          "href": "https://www.igxe.cn/product-111401360",
+          "marketAvgPrice": "213.48",
+          "exterior": " 0.05592877417803 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "169.49",
+          "href": "https://www.igxe.cn/product-111865863",
+          "marketAvgPrice": "213.48",
+          "exterior": " 0.04886339604855 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "179.40",
+          "href": "https://www.igxe.cn/product-111097385",
+          "marketAvgPrice": "213.48",
+          "exterior": " 0.04091455414891 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "188.00",
+          "href": "https://www.igxe.cn/product-111304308",
+          "marketAvgPrice": "213.48",
+          "exterior": " 0.04161868616939 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "214.00",
+          "href": "https://www.igxe.cn/product-111349611",
+          "marketAvgPrice": "213.48",
+          "exterior": " 0.06829853355885 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "220.00",
+          "href": "https://www.igxe.cn/product-111102571",
+          "marketAvgPrice": "213.48",
+          "exterior": " 0.05936670303345 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "240.00",
+          "href": "https://www.igxe.cn/product-110712937",
+          "marketAvgPrice": "213.48",
+          "exterior": " 0.05183914303780 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "280.00",
+          "href": "https://www.igxe.cn/product-110171850",
+          "marketAvgPrice": "213.48",
+          "exterior": " 0.03435739129782 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -2673,6 +3877,90 @@
           "marketAvgPrice": "646.46",
           "exterior": " 0.25865036249161 ",
           "date": 1506500400019
+        },
+        {
+          "price": "544.00",
+          "href": "https://www.igxe.cn/product-111925720",
+          "marketAvgPrice": "646.46",
+          "exterior": " 0.35356712341309 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "544.00",
+          "href": "https://www.igxe.cn/product-111914187",
+          "marketAvgPrice": "646.46",
+          "exterior": " 0.31253957748413 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "544.00",
+          "href": "https://www.igxe.cn/product-111914188",
+          "marketAvgPrice": "646.46",
+          "exterior": " 0.36135143041611 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "544.50",
+          "href": "https://www.igxe.cn/product-111907696",
+          "marketAvgPrice": "646.46",
+          "exterior": " 0.30143573880196 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "545.00",
+          "href": "https://www.igxe.cn/product-111896509",
+          "marketAvgPrice": "646.46",
+          "exterior": " 0.28838714957237 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "560.00",
+          "href": "https://www.igxe.cn/product-111301610",
+          "marketAvgPrice": "646.46",
+          "exterior": " 0.32831650972366 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "590.00",
+          "href": "https://www.igxe.cn/product-107099355",
+          "marketAvgPrice": "646.46",
+          "exterior": " 0.35397416353226 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "599.99",
+          "href": "https://www.igxe.cn/product-111835405",
+          "marketAvgPrice": "646.46",
+          "exterior": " 0.28878274559975 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "599.99",
+          "href": "https://www.igxe.cn/product-111082359",
+          "marketAvgPrice": "646.46",
+          "exterior": " 0.28262180089951 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "600.00",
+          "href": "https://www.igxe.cn/product-109366654",
+          "marketAvgPrice": "646.46",
+          "exterior": " 0.28927579522133 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "600.00",
+          "href": "https://www.igxe.cn/product-111455100",
+          "marketAvgPrice": "646.46",
+          "exterior": " 0.26590847969055 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "600.00",
+          "href": "https://www.igxe.cn/product-111799418",
+          "marketAvgPrice": "646.46",
+          "exterior": " 0.30717045068741 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -2768,6 +4056,62 @@
           "marketAvgPrice": "574.68",
           "exterior": " 0.11795039474964 ",
           "date": 1506500400019
+        },
+        {
+          "price": "505.00",
+          "href": "https://www.igxe.cn/product-111315294",
+          "marketAvgPrice": "574.68",
+          "exterior": " 0.10807471722364 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "585.00",
+          "href": "https://www.igxe.cn/product-111401390",
+          "marketAvgPrice": "574.68",
+          "exterior": " 0.08644732087851 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "588.00",
+          "href": "https://www.igxe.cn/product-108549505",
+          "marketAvgPrice": "574.68",
+          "exterior": " 0.08499465882778 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "590.00",
+          "href": "https://www.igxe.cn/product-106897044",
+          "marketAvgPrice": "574.68",
+          "exterior": " 0.13291454315186 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "600.00",
+          "href": "https://www.igxe.cn/product-107854083",
+          "marketAvgPrice": "574.68",
+          "exterior": " 0.09057268500328 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "680.00",
+          "href": "https://www.igxe.cn/product-111828916",
+          "marketAvgPrice": "574.68",
+          "exterior": " 0.13665182888508 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "800.00",
+          "href": "https://www.igxe.cn/product-111773869",
+          "marketAvgPrice": "574.68",
+          "exterior": " 0.13773651421070 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1149.00",
+          "href": "https://www.igxe.cn/product-110982692",
+          "marketAvgPrice": "574.68",
+          "exterior": " 0.11795039474964 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -2891,6 +4235,90 @@
           "marketAvgPrice": "959.39",
           "exterior": " 读取中............ ",
           "date": 1506500400019
+        },
+        {
+          "price": "842.00",
+          "href": "https://www.igxe.cn/product-111671921",
+          "marketAvgPrice": "959.39",
+          "exterior": " 0.06621132045984 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "854.00",
+          "href": "https://www.igxe.cn/product-111769254",
+          "marketAvgPrice": "959.39",
+          "exterior": " 0.01527486741543 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "854.50",
+          "href": "https://www.igxe.cn/product-111759780",
+          "marketAvgPrice": "959.39",
+          "exterior": " 0.03382735326886 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "865.00",
+          "href": "https://www.igxe.cn/product-110457245",
+          "marketAvgPrice": "959.39",
+          "exterior": " 0.02787334471941 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "869.00",
+          "href": "https://www.igxe.cn/product-108609804",
+          "marketAvgPrice": "959.39",
+          "exterior": " 0.03201552852988 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "869.00",
+          "href": "https://www.igxe.cn/product-111598565",
+          "marketAvgPrice": "959.39",
+          "exterior": " 0.03182337060571 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "873.80",
+          "href": "https://www.igxe.cn/product-111286982",
+          "marketAvgPrice": "959.39",
+          "exterior": " 0.01895885914564 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "889.00",
+          "href": "https://www.igxe.cn/product-107557184",
+          "marketAvgPrice": "959.39",
+          "exterior": " 0.02342629805207 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "891.00",
+          "href": "https://www.igxe.cn/product-108477608",
+          "marketAvgPrice": "959.39",
+          "exterior": " 读取中............ ",
+          "date": 1506503400018
+        },
+        {
+          "price": "910.00",
+          "href": "https://www.igxe.cn/product-111812223",
+          "marketAvgPrice": "959.39",
+          "exterior": " 0.01394702307880 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "930.00",
+          "href": "https://www.igxe.cn/product-111192652",
+          "marketAvgPrice": "959.39",
+          "exterior": " 0.01869728043675 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "950.00",
+          "href": "https://www.igxe.cn/product-108418556",
+          "marketAvgPrice": "959.39",
+          "exterior": " 读取中............ ",
+          "date": 1506503400018
         }
       ]
     },
@@ -3014,6 +4442,90 @@
           "marketAvgPrice": "186.35",
           "exterior": " 0.09439813345671 ",
           "date": 1506500400019
+        },
+        {
+          "price": "156.00",
+          "href": "https://www.igxe.cn/product-110869386",
+          "marketAvgPrice": "186.35",
+          "exterior": " 0.13325147330761 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "156.50",
+          "href": "https://www.igxe.cn/product-111259666",
+          "marketAvgPrice": "186.35",
+          "exterior": " 0.12596867978573 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "170.00",
+          "href": "https://www.igxe.cn/product-111883530",
+          "marketAvgPrice": "186.35",
+          "exterior": " 0.13707983493805 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "175.00",
+          "href": "https://www.igxe.cn/product-111176071",
+          "marketAvgPrice": "186.35",
+          "exterior": " 0.14146761596203 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "175.00",
+          "href": "https://www.igxe.cn/product-110612982",
+          "marketAvgPrice": "186.35",
+          "exterior": " 0.13110783696175 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "179.98",
+          "href": "https://www.igxe.cn/product-110074390",
+          "marketAvgPrice": "186.35",
+          "exterior": " 0.14321447908878 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "182.00",
+          "href": "https://www.igxe.cn/product-108148632",
+          "marketAvgPrice": "186.35",
+          "exterior": " 读取中............ ",
+          "date": 1506503400018
+        },
+        {
+          "price": "185.00",
+          "href": "https://www.igxe.cn/product-111465146",
+          "marketAvgPrice": "186.35",
+          "exterior": " 0.12007116526365 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "185.00",
+          "href": "https://www.igxe.cn/product-111914791",
+          "marketAvgPrice": "186.35",
+          "exterior": " 0.10761093348265 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "185.00",
+          "href": "https://www.igxe.cn/product-110266450",
+          "marketAvgPrice": "186.35",
+          "exterior": " 0.12012252211571 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "229.00",
+          "href": "https://www.igxe.cn/product-110688127",
+          "marketAvgPrice": "186.35",
+          "exterior": " 0.11184783279896 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "233.00",
+          "href": "https://www.igxe.cn/product-111309743",
+          "marketAvgPrice": "186.35",
+          "exterior": " 0.09439813345671 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -3137,6 +4649,90 @@
           "marketAvgPrice": "1191.23",
           "exterior": " 0.12164925038815 ",
           "date": 1506500400019
+        },
+        {
+          "price": "992.50",
+          "href": "https://www.igxe.cn/product-111360122",
+          "marketAvgPrice": "1191.23",
+          "exterior": " 0.14587612450123 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "993.00",
+          "href": "https://www.igxe.cn/product-111808688",
+          "marketAvgPrice": "1191.23",
+          "exterior": " 0.14594280719757 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "999.48",
+          "href": "https://www.igxe.cn/product-111745042",
+          "marketAvgPrice": "1191.23",
+          "exterior": " 0.14717929065228 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1040.00",
+          "href": "https://www.igxe.cn/product-111797972",
+          "marketAvgPrice": "1191.23",
+          "exterior": " 0.12895511090755 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1099.00",
+          "href": "https://www.igxe.cn/product-111683335",
+          "marketAvgPrice": "1191.23",
+          "exterior": " 0.11936143785715 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1135.00",
+          "href": "https://www.igxe.cn/product-109901464",
+          "marketAvgPrice": "1191.23",
+          "exterior": " 0.12539744377136 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1145.00",
+          "href": "https://www.igxe.cn/product-111809220",
+          "marketAvgPrice": "1191.23",
+          "exterior": " 0.12205813825130 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1172.87",
+          "href": "https://www.igxe.cn/product-110269228",
+          "marketAvgPrice": "1191.23",
+          "exterior": " 0.12554101645947 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1180.00",
+          "href": "https://www.igxe.cn/product-107704255",
+          "marketAvgPrice": "1191.23",
+          "exterior": " 0.12355268001556 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1188.00",
+          "href": "https://www.igxe.cn/product-105822897",
+          "marketAvgPrice": "1191.23",
+          "exterior": " 0.14712506532669 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1222.00",
+          "href": "https://www.igxe.cn/product-111806189",
+          "marketAvgPrice": "1191.23",
+          "exterior": " 0.12262666225433 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1310.00",
+          "href": "https://www.igxe.cn/product-111313924",
+          "marketAvgPrice": "1191.23",
+          "exterior": " 0.12164925038815 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -3260,6 +4856,90 @@
           "marketAvgPrice": "1026.58",
           "exterior": " 0.00829428248107 ",
           "date": 1506500400019
+        },
+        {
+          "price": "843.50",
+          "href": "https://www.igxe.cn/product-111929221",
+          "marketAvgPrice": "1026.58",
+          "exterior": " 0.03371969237924 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "844.00",
+          "href": "https://www.igxe.cn/product-111926613",
+          "marketAvgPrice": "1026.58",
+          "exterior": " 0.01058498863131 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "845.50",
+          "href": "https://www.igxe.cn/product-111410787",
+          "marketAvgPrice": "1026.58",
+          "exterior": " 0.03818495199084 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "846.00",
+          "href": "https://www.igxe.cn/product-111721382",
+          "marketAvgPrice": "1026.58",
+          "exterior": " 0.01425455417484 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "848.00",
+          "href": "https://www.igxe.cn/product-111825747",
+          "marketAvgPrice": "1026.58",
+          "exterior": " 0.01406235527247 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "848.50",
+          "href": "https://www.igxe.cn/product-111793381",
+          "marketAvgPrice": "1026.58",
+          "exterior": " 0.02687788382173 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "850.00",
+          "href": "https://www.igxe.cn/product-110827259",
+          "marketAvgPrice": "1026.58",
+          "exterior": " 0.01032142620534 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "856.00",
+          "href": "https://www.igxe.cn/product-111421936",
+          "marketAvgPrice": "1026.58",
+          "exterior": " 0.02939978055656 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "869.00",
+          "href": "https://www.igxe.cn/product-111681565",
+          "marketAvgPrice": "1026.58",
+          "exterior": " 0.04607879370451 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "877.00",
+          "href": "https://www.igxe.cn/product-109199020",
+          "marketAvgPrice": "1026.58",
+          "exterior": " 0.05963007733226 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "877.00",
+          "href": "https://www.igxe.cn/product-109776199",
+          "marketAvgPrice": "1026.58",
+          "exterior": " 0.03815397620201 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "886.00",
+          "href": "https://www.igxe.cn/product-111819804",
+          "marketAvgPrice": "1026.58",
+          "exterior": " 0.03225387260318 ",
+          "date": 1506503400018
         }
       ]
     },
@@ -3415,6 +5095,90 @@
           "marketAvgPrice": "1327.19",
           "exterior": " 0.00820405688137 ",
           "date": 1506500400019
+        },
+        {
+          "price": "1110.00",
+          "href": "https://www.igxe.cn/product-111928638",
+          "marketAvgPrice": "1327.19",
+          "exterior": " 0.00687341392040 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1111.00",
+          "href": "https://www.igxe.cn/product-111926605",
+          "marketAvgPrice": "1327.19",
+          "exterior": " 0.03169294819236 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1127.00",
+          "href": "https://www.igxe.cn/product-111707018",
+          "marketAvgPrice": "1327.19",
+          "exterior": " 0.00818358268589 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1134.00",
+          "href": "https://www.igxe.cn/product-111264545",
+          "marketAvgPrice": "1327.19",
+          "exterior": " 0.03775316104293 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1135.00",
+          "href": "https://www.igxe.cn/product-111895106",
+          "marketAvgPrice": "1327.19",
+          "exterior": " 0.05837707221508 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1149.00",
+          "href": "https://www.igxe.cn/product-111833733",
+          "marketAvgPrice": "1327.19",
+          "exterior": " 0.03256422281265 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1155.00",
+          "href": "https://www.igxe.cn/product-110764508",
+          "marketAvgPrice": "1327.19",
+          "exterior": " 0.00649882666767 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1158.00",
+          "href": "https://www.igxe.cn/product-110424547",
+          "marketAvgPrice": "1327.19",
+          "exterior": " 0.03463493660092 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1197.00",
+          "href": "https://www.igxe.cn/product-110197014",
+          "marketAvgPrice": "1327.19",
+          "exterior": " 0.00741277262568 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1198.00",
+          "href": "https://www.igxe.cn/product-111819801",
+          "marketAvgPrice": "1327.19",
+          "exterior": " 0.01077516190708 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1200.00",
+          "href": "https://www.igxe.cn/product-110614409",
+          "marketAvgPrice": "1327.19",
+          "exterior": " 0.01362818572670 ",
+          "date": 1506503400018
+        },
+        {
+          "price": "1235.00",
+          "href": "https://www.igxe.cn/product-111854005",
+          "marketAvgPrice": "1327.19",
+          "exterior": " 0.01128502376378 ",
+          "date": 1506503400018
         }
       ]
     }
