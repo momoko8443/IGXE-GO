@@ -12,7 +12,7 @@ function ResultDAO() {
     };
 
     this.findByTaskId = function(taskId){
-        return this.db.get('results').find({'task_id':taskId}).value();
+        return this.db.get('results').filter({'task_id':taskId}).value();
     };
 
     this.add = function (result) {
