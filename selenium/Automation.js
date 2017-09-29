@@ -6,6 +6,7 @@ var proxy = require('selenium-webdriver/proxy');
 
 var phantomjs = require('./phantomCapability');
 var taskDAO = require('../database/dao/TaskDAO');
+var resultDAO = require('../database/dao/ResultDAO');
 var accountDAO = require('../database/dao/AccountDAO');
 
 function Automation() {
@@ -40,17 +41,18 @@ function Automation() {
     this.watch = function(task,date) {
         return new Promise( (resolve, reject) => {
             //taskDAO.update({'_id':task._id,'result':[]});
-            let oldResult = taskDAO.find(task._id).result;
-            if(!oldResult){
-                oldResult = [];
-            }
+            let results = [];
+            
             //let newResult = [];
             task.url = encodeURI(task.url);
             //console.log(task.url);
             this.driver.get(task.url);
             this.driver.findElements(By.css('div.mod-hotEquipment')).then(elems => {
                 doAsyncSeries(elems).then( ()=> {
-                    taskDAO.update({'_id':task._id,'result':oldResult});
+                    results.forEach(function(result) {
+                        result["task_id"] = task._id;
+                        resultDAO.add(result);
+                    });
                     resolve();
                 }).catch( err => {
                     console.error('weapons were not found');
@@ -73,7 +75,7 @@ function Automation() {
                                 element.findElement(By.css('div.mod-hotEquipment-hd > a:nth-child(1)')).getAttribute('href').then(href => {
                                     element.findElement(By.css('div.mod-hotEquipment-hd > span')).getAttribute('innerText').then(exterior => {
                                         exterior = exterior.split(':')[1];
-                                        oldResult.push({'price':price,'href':href,'marketAvgPrice':market_avg_price,'exterior':exterior,'date':date});
+                                        result.push({'price':price,'href':href,'marketAvgPrice':market_avg_price,'exterior':exterior,'date':date});
                                         console.log(price,href,market_avg_price,exterior);
                                         resolve();
                                     }).catch(err => {
