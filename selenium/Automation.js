@@ -75,7 +75,7 @@ function Automation() {
                                 element.findElement(By.css('div.mod-hotEquipment-hd > a:nth-child(1)')).getAttribute('href').then(href => {
                                     element.findElement(By.css('div.mod-hotEquipment-hd > span')).getAttribute('innerText').then(exterior => {
                                         exterior = exterior.split(':')[1];
-                                        result.push({'price':price,'href':href,'marketAvgPrice':market_avg_price,'exterior':exterior,'date':date});
+                                        results.push({'price':price,'href':href,'marketAvgPrice':market_avg_price,'exterior':exterior,'date':date});
                                         console.log(price,href,market_avg_price,exterior);
                                         resolve();
                                     }).catch(err => {
