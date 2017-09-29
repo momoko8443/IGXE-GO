@@ -11,6 +11,10 @@ function ResultDAO() {
         return this.db.get('results').find({'_id':resultId}).value();
     };
 
+    this.findByTaskId = function(taskId){
+        return this.db.get('results').find({'task_id':taskId}).value();
+    };
+
     this.add = function (result) {
         if (!result._id) {
             result._id = shortid.generate();

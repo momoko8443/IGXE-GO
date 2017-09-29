@@ -2,6 +2,7 @@ var taskDAO = require('../database/dao/TaskDAO');
 var automation = require('../selenium/Automation');
 var mailSender = require('../mail/MailSender');
 var receiverDAO = require('../database/dao/ReceiverDAO');
+var resultDAO = require('../database/dao/ResultDAO');
 function AutomationController(){
     let domain = 'https://www.igxe.cn';
     function convertBoolean(flag){
@@ -37,7 +38,8 @@ function AutomationController(){
             let tasks = taskDAO.findAllRunning();
             let alert_list = [];
             tasks.forEach(function(task) {
-                task.result.forEach((item) => {
+                let results = resultDAO.findByTaskId(task._id);
+                results.forEach((item) => {
                     if(item.date === date && parseFloat(item.price) <= parseInt(task.maxPrice)){
                         let alertItem = {};
                         alertItem.task = task;
