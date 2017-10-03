@@ -44,7 +44,8 @@
                             <th>磨损值</th>
                             <th>StatTrak</th>
                             <th>印花</th>
-                            <th>警示价</th>
+                            <th>警示价(出售)</th>
+                            <th>警示价(求购)</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -54,9 +55,10 @@
                             <td>{{task.keyword}}</td>
                             <td>{{task.rarity.name}}</td>
                             <td>{{task.exterior.name}}</td>
-                            <td>{{task.isStatTrak}}</td>
-                            <td>{{task.isSticker}}</td>
-                            <td>{{task.maxPrice}}</td>
+                            <td>{{task.isStatTrak ? '有':'无'}}</td>
+                            <td>{{task.isSticker ? '有':'无'}}</td>
+                            <td>{{task.maxPrice || ''}}</td>
+                            <td>{{task.buyPrice || ''}}</td>
                             <td>
                                 <a class="btn btn-default btn-sm" href="javascript:;" role="button" uku-render="parent.mainCtrl.iconStatus(task.isRunning)"
                                     uku-onclick="parent.mainCtrl.runOrStopTask(task)">
@@ -135,8 +137,14 @@
                             </label>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputFile">警示价（低于）</label>
-                            <input type="number" class="form-control" uku-value="mainCtrl.currentTask.maxPrice">
+                            <input type="checkbox" uku-value="mainCtrl.currentTask.alertSalePrice">
+                            <label for="exampleInputFile">出售价（低于）则通知我</label>
+                            <input type="number" uku-disabled="!mainCtrl.currentTask.alertSalePrice" class="form-control" uku-value="mainCtrl.currentTask.maxPrice">
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" uku-value="mainCtrl.currentTask.alertBuyPrice">
+                            <label for="exampleInputFile">求购价（高于）则通知我</label>
+                            <input type="number" uku-disabled="!mainCtrl.currentTask.alertBuyPrice" class="form-control" uku-value="mainCtrl.currentTask.buyPrice">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputFile">被通知人</label>
@@ -151,8 +159,8 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success" uku-render="mainCtrl.editMode" uku-onclick="mainCtrl.updateTask()">更新</button>
-                    <button type="button" class="btn btn-success" uku-onclick="mainCtrl.createTask(false)">{{mainCtrl.saveButtonLable()}}</button>
+                    <button type="button" class="btn btn-success" uku-disabled="!mainCtrl.currentTask.alertSalePrice && !mainCtrl.currentTask.alertBuyPrice" uku-render="mainCtrl.editMode" uku-onclick="mainCtrl.updateTask()">更新</button>
+                    <button type="button" class="btn btn-success" uku-disabled="!mainCtrl.currentTask.alertSalePrice && !mainCtrl.currentTask.alertBuyPrice" uku-onclick="mainCtrl.createTask(false)">{{mainCtrl.saveButtonLable()}}</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
                 </div>
             </div>
@@ -213,11 +221,14 @@
             this.currentTask.keyword = "";
             this.currentTask.isStatTrak = false;
             this.currentTask.isSticker = false;
-            this.currentTask.maxPrice = 299;
+            this.currentTask.alertSalePrice = true;
+            this.currentTask.alertBuyPrice = false;
+            this.currentTask.maxPrice = 0;
+            this.currentTask.buyPrice = 0;
             uku.refresh('mainCtrl');
         };
         this.editMode = false;
-        this.editWeapon = function (task) {
+        this.editWeapon = function (e,task) {
             //task;
             this.editMode = true;
             self.currentTask._id = task._id;
@@ -264,6 +275,17 @@
             this.currentTask.isStatTrak = task.isStatTrak;
             this.currentTask.isSticker = task.isSticker;
             this.currentTask.maxPrice = task.maxPrice;
+            if(task.maxPrice){
+                this.currentTask.alertSalePrice = true;
+            }else{
+                this.currentTask.alertSalePrice = false;
+            }
+            this.currentTask.buyPrice = task.buyPrice;
+            if(task.buyPrice){
+                this.currentTask.alertBuyPrice = true;
+            }else{
+                this.currentTask.alertBuyPrice = false;
+            }
             uku.refresh('mainCtrl');
         };
 
@@ -298,7 +320,7 @@
             return info;
         };
 
-        this.removeTask = function (task) {
+        this.removeTask = function (e,task) {
             $.ajax({
                 url: '/api/tasks/' + task._id,
                 method: 'DELETE',
@@ -312,7 +334,7 @@
             return !isRunning;
         }
 
-        this.runOrStopTask = function (task) {
+        this.runOrStopTask = function (e,task) {
             $.ajax({
                 url: '/api/tasks/' + task._id,
                 method: 'PATCH',
@@ -341,7 +363,16 @@
             task.weapon = this.currentTask.selectedChildOption;
             task.rarity = this.currentTask.selectedOption_1;
             task.exterior = this.currentTask.selectedOption_2;
-            task.maxPrice = this.currentTask.maxPrice;
+            if(this.currentTask.alertSalePrice){
+                task.maxPrice = this.currentTask.maxPrice;
+            }else{
+                task.maxPrice = 0;
+            }
+            if(this.currentTask.alertBuyPrice){
+                task.buyPrice = this.currentTask.buyPrice;
+            }else{
+                task.buyPrice = 0;
+            }
             task.isStatTrak = this.currentTask.isStatTrak;
             task.isSticker = this.currentTask.isSticker;
             task.receivers = [];

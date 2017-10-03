@@ -3,6 +3,7 @@ var automation = require('../selenium/Automation');
 var mailSender = require('../mail/MailSender');
 var receiverDAO = require('../database/dao/ReceiverDAO');
 var resultDAO = require('../database/dao/ResultDAO');
+var buyDAO = require('../database/dao/BuyDAO');
 function AutomationController(){
     let domain = 'https://www.igxe.cn';
     function convertBoolean(flag){
@@ -37,16 +38,30 @@ function AutomationController(){
             console.info('run automation successfully');
             let tasks = taskDAO.findAllRunning();
             let alert_list = [];
-            tasks.forEach(function(task) {
-                let results = resultDAO.findByTaskId(task._id);
-                results.forEach((item) => {
-                    if(item.date === date && parseFloat(item.price) <= parseInt(task.maxPrice)){
-                        let alertItem = {};
-                        alertItem.task = task;
-                        alertItem.item = item;
-                        alert_list.push(alertItem);
-                    }
-                }); 
+            tasks.forEach(task => {
+                if(task.maxPrice > 0){
+                    let results = resultDAO.findByTaskId(task._id);
+                    results.forEach((item) => {
+                        if(item.date === date && parseFloat(item.price) <= parseInt(task.maxPrice)){
+                            let alertItem = {};
+                            alertItem.task = task;
+                            alertItem.item = item;
+                            alert_list.push(alertItem);
+                        }
+                    });
+                }
+                
+                if(task.buyPrice > 0){
+                    let buys = buyDAO.findByTaskId(task._id);
+                    buys.forEach(item => {
+                        if(item.date === date && item.buyPrices[0] && parseFloat(item.buyPrices[0]) > parseInt(task.buyPrice)){
+                            let alertItem = {};
+                            alertItem.task = task;
+                            alertItem.item = item;
+                            alert_list.push(alertItem);
+                        }
+                    }); 
+                }  
             });
             if(alert_list.length > 0){
                 let mailPool = {};

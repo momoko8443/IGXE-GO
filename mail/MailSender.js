@@ -28,25 +28,32 @@ function MailSender(){
                 title += alertItem.task.exterior.name + ' | ';
                 title += '售价: ' + alertItem.item.price + ' | ';
                 title += '磨损度: ' + alertItem.item.exterior + ' | ';
-                let discount = parseFloat(alertItem.item.price)/parseFloat(alertItem.item.marketAvgPrice);
-                title += '(低于警示价:' + (parseFloat(alertItem.task.maxPrice) - parseFloat(alertItem.item.price)).toFixed(2) + ' 低于市场平均价: ' + (parseFloat(alertItem.item.marketAvgPrice) - parseFloat(alertItem.item.price)).toFixed(2) + ' 折扣:' + discount.toFixed(2) +')';
-                
-                if(!existInMailHistory(receiver,title)){
-                    let fontColor = 'black';
-                    switch(true){
-                        case discount < 0.8 :
-                            fontColor = 'red';
-                            break;
-                        case discount < 0.85 :
-                            fontColor = 'orange';
-                            break;
-                        default:
-                            fontColor = 'black';
-                            break;
+                if(parseFloat(alertItem.task.maxPrice) > 0){
+                    let discount = parseFloat(alertItem.item.price)/parseFloat(alertItem.item.marketAvgPrice);
+                    title += '(低于警示价:' + (parseFloat(alertItem.task.maxPrice) - parseFloat(alertItem.item.price)).toFixed(2) + ' 低于市场平均价: ' + (parseFloat(alertItem.item.marketAvgPrice) - parseFloat(alertItem.item.price)).toFixed(2) + ' 折扣:' + discount.toFixed(2) +')';
+                    if(!existInMailHistory(receiver,title)){
+                        let fontColor = 'black';
+                        switch(true){
+                            case discount < 0.8 :
+                                fontColor = 'red';
+                                break;
+                            case discount < 0.85 :
+                                fontColor = 'orange';
+                                break;
+                            default:
+                                fontColor = 'black';
+                                break;
+                        }
+                        
                     }
                     elements.push('<li><a style="color:' + fontColor + '" href="'+ alertItem.item.href +'">'+ title +'</a></li>');
-                    mailDAO.addMailHistory(receiver,title);
                 }
+                if(parseFloat(alertItem.task.buyPrice) > 0){
+                    title += '(有人高于你的出价:' + (parseFloat(alertItem.item.buyPrices[0]) - parseFloat(alertItem.task.buyPrice)).toFixed(2) + ")";
+                    elements.push('<li><a style="color:red" href="'+ alertItem.item.href +'">'+ title +'</a></li>');
+                }
+                
+                mailDAO.addMailHistory(receiver,title);
             });
             if(elements.length > 0){
                 let html_body = '<ul>'+ elements.join(' ') +'</ul>';
@@ -54,8 +61,8 @@ function MailSender(){
                 let mailOptions = {
                     from: from, // sender address
                     to: receiver, // list of receivers
-                    subject: '[Low Price Reminder] 有新低价武器出现 ', // Subject line
-                    text: '有新低价武器出现', // plain text body
+                    subject: '[IGXE AUTO]', // Subject line
+                    text: '有新低价武器/高价求购出现', // plain text body
                     html: html_body // html body
                 };
                 sendMail(mailOptions);
