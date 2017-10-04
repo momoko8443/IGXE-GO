@@ -50,18 +50,6 @@ function AutomationController(){
                         }
                     });
                 }
-                
-                if(task.buyPrice > 0){
-                    let buys = buyDAO.findByTaskId(task._id);
-                    buys.forEach(item => {
-                        if(item.date === date && item.buyPrices[0] && parseFloat(item.buyPrices[0]) > parseInt(task.buyPrice)){
-                            let alertItem = {};
-                            alertItem.task = task;
-                            alertItem.item = item;
-                            alert_list.push(alertItem);
-                        }
-                    }); 
-                }  
             });
             if(alert_list.length > 0){
                 let mailPool = {};

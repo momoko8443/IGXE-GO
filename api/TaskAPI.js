@@ -1,11 +1,23 @@
 var express = require('express');
 var taskDAO = require('../database/dao/TaskDAO');
+var buyDAO = require('../database/dao/BuyDAO');
 var router = express.Router();
 
 module.exports = function(){
     router
     .get('/tasks', (req,res) => {
         let tasks = taskDAO.findAll();
+        tasks.forEach(function(task) {
+            let buys = buyDAO.findByTaskId(task._id);
+            let buyPrice = '';
+            if(buys && buys.length > 0){
+                let buyLog = buys[buys.length-1];
+                if(buyLog.buyPrices && buyLog.buyPrices.length > 0){
+                    buyPrice = buyLog.buyPrices[0];
+                }
+            }
+            task.buyPrice = buyPrice;
+        });
         res.send(tasks);
     })
     .post('/tasks', (req, res) => {

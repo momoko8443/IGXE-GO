@@ -47,12 +47,7 @@ function MailSender(){
                         
                     }
                     elements.push('<li><a style="color:' + fontColor + '" href="'+ alertItem.item.href +'">'+ title +'</a></li>');
-                }
-                if(parseFloat(alertItem.task.buyPrice) > 0){
-                    title += '(有人高于你的出价:' + (parseFloat(alertItem.item.buyPrices[0]) - parseFloat(alertItem.task.buyPrice)).toFixed(2) + ")";
-                    elements.push('<li><a style="color:red" href="'+ alertItem.item.href +'">'+ title +'</a></li>');
-                }
-                
+                }                
                 mailDAO.addMailHistory(receiver,title);
             });
             if(elements.length > 0){
@@ -62,7 +57,7 @@ function MailSender(){
                     from: from, // sender address
                     to: receiver, // list of receivers
                     subject: '[IGXE AUTO]', // Subject line
-                    text: '有新低价武器/高价求购出现', // plain text body
+                    text: '有新的低价武器出现', // plain text body
                     html: html_body // html body
                 };
                 sendMail(mailOptions);
