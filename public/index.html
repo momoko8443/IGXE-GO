@@ -51,7 +51,9 @@
                     </thead>
                     <tbody>
                         <tr uku-repeat="task in mainCtrl.tasks">
-                            <td>{{task.weapon.name}}</td>
+                            <td>
+                                <a uku-href="task.url">{{task.weapon.name}}</a>
+                            </td>
                             <td>{{task.keyword}}</td>
                             <td>{{task.rarity.name}}</td>
                             <td>{{task.exterior.name}}</td>

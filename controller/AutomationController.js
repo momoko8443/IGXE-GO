@@ -29,6 +29,8 @@ function AutomationController(){
             searchURL += '&search_exterior_id=' + task.exterior.value;
             searchURL += '&search_sort_key=2';
             searchURL += '&search_sort_rule=0';
+            task.url = searchURL;
+            taskDAO.update(task);
             //console.log(searchURL);
             _tasks.push({'_id':task._id,'url':searchURL});
         });

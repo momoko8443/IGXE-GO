@@ -9,9 +9,12 @@ module.exports = function(){
         let tasks = taskDAO.findAll();
         tasks.forEach(function(task) {
             let buys = buyDAO.findByTaskId(task._id);
+            buys.sort((a,b)=>{
+                return b.date - a.date;
+            })
             let buyPrice = '';
             if(buys && buys.length > 0){
-                let buyLog = buys[buys.length-1];
+                let buyLog = buys[0];
                 if(buyLog.buyPrices && buyLog.buyPrices.length > 0){
                     buyPrice = buyLog.buyPrices[0];
                 }

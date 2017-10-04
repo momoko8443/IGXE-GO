@@ -41,12 +41,8 @@ function Automation() {
 
     this.watch = function(task,date) {
         return new Promise( (resolve, reject) => {
-            //taskDAO.update({'_id':task._id,'result':[]});
             let results = [];
-            
-            //let newResult = [];
             task.url = encodeURI(task.url);
-            //console.log(task.url);
             this.driver.get(task.url);
             this.driver.findElements(By.css('div.mod-hotEquipment')).then(elems => {
                 doAsyncSeries(elems).then( ()=> {
