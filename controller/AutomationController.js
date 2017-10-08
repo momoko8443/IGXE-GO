@@ -43,14 +43,27 @@ function AutomationController(){
             tasks.forEach(task => {
                 if(task.maxPrice > 0){
                     let results = resultDAO.findByTaskId(task._id);
+                    let currentMinPrice;
                     results.forEach((item) => {
-                        if(item.date === date && parseFloat(item.price) <= parseInt(task.maxPrice)){
-                            let alertItem = {};
-                            alertItem.task = task;
-                            alertItem.item = item;
-                            alert_list.push(alertItem);
+                        if(item.date === date){
+                            if(!currentMinPrice){
+                                currentMinPrice = parseFloat(item.price);
+                            }
+                            if(currentMinPrice > parseFloat(item.price)){
+                                currentMinPrice = parseFloat(item.price);
+                            }
+                            if( parseFloat(item.price) <= parseInt(task.maxPrice)){
+                                let alertItem = {};
+                                alertItem.task = task;
+                                alertItem.item = item;
+                                alert_list.push(alertItem);
+                            }      
                         }
                     });
+                    if(currentMinPrice){
+                        task.currentMinPrice = currentMinPrice;
+                        taskDAO.update(task);
+                    }
                 }
             });
             if(alert_list.length > 0){

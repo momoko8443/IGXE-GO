@@ -44,7 +44,8 @@
                             <th>磨损值</th>
                             <th>StatTrak</th>
                             <th>印花</th>
-                            <th>警示价(出售)</th>
+                            <th>警示价</th>
+                            <th>最低出售价</th>
                             <th>最高求购价</th>
                             <th></th>
                         </tr>
@@ -60,6 +61,7 @@
                             <td>{{task.isStatTrak ? '有':'无'}}</td>
                             <td>{{task.isSticker ? '有':'无'}}</td>
                             <td>{{task.maxPrice || ''}}</td>
+                            <td style="color:forestgreen">{{task.currentMinPrice || ''}}</td>
                             <td style="color:coral">{{task.buyPrice || ''}}</td>
                             <td>
                                 <a class="btn btn-default btn-sm" href="javascript:;" role="button" uku-render="parent.mainCtrl.iconStatus(task.isRunning)"
