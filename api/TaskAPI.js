@@ -12,7 +12,7 @@ module.exports = function(){
             buys.sort((a,b)=>{
                 return b.date - a.date;
             })
-            let buyPrice = '';
+            let buyPrice = 'N/A';
             if(buys && buys.length > 0){
                 let buyLog = buys[0];
                 if(buyLog.buyPrices && buyLog.buyPrices.length > 0){

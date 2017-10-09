@@ -81,28 +81,33 @@ function Automation() {
 
                 function analysePrice(element) {
                     return new Promise( (resolve, reject) => {
-                        element.findElement(By.css('div.mod-hotEquipment-bd > div.s3 > span > strong')).getAttribute('innerText').then(price => {
-                            element.findElement(By.css('div.mod-hotEquipment-bd > div.s2 > span > b')).getAttribute('innerText').then(market_avg_price => {
-                                element.findElement(By.css('div.mod-hotEquipment-hd > a:nth-child(1)')).getAttribute('href').then(href => {
-                                    element.findElement(By.css('div.mod-hotEquipment-hd > span')).getAttribute('innerText').then(exterior => {
-                                        exterior = exterior.split(':')[1];
-                                        results.push({'price':price,'href':href,'marketAvgPrice':market_avg_price,'exterior':exterior,'date':date});
-                                        console.log(price,href,market_avg_price,exterior);
-                                        resolve();
+                        element.findElement(By.css('div.mod-hotEquipment-hd > a:nth-child(3) > div > img')).getAttribute('src').then(src => {
+                            element.findElement(By.css('div.mod-hotEquipment-bd > div.s3 > span > strong')).getAttribute('innerText').then(price => {
+                                element.findElement(By.css('div.mod-hotEquipment-bd > div.s2 > span > b')).getAttribute('innerText').then(market_avg_price => {
+                                    element.findElement(By.css('div.mod-hotEquipment-hd > a:nth-child(1)')).getAttribute('href').then(href => {
+                                        element.findElement(By.css('div.mod-hotEquipment-hd > span')).getAttribute('innerText').then(exterior => {
+                                            exterior = exterior.split(':')[1];
+                                            results.push({'price':price,'img':src,'href':href,'marketAvgPrice':market_avg_price,'exterior':exterior,'date':date});
+                                            console.log(price,href,market_avg_price,exterior);
+                                            resolve();
+                                        }).catch(err => {
+                                            console.log('weapon\'s exterior was not found');
+                                            reject();
+                                        })                                                            
                                     }).catch(err => {
-                                        console.log('weapon\'s exterior was not found');
+                                        console.log('weapon\'s link was not found');
                                         reject();
-                                    })                                                            
+                                    });
                                 }).catch(err => {
-                                    console.log('weapon\'s link was not found');
+                                    console.log('weapon\'s market avg price was not found');
                                     reject();
                                 });
                             }).catch(err => {
-                                console.log('weapon\'s market avg price was not found');
+                                console.log('weapon\'s price was not found');
                                 reject();
                             });
-                        }).catch(err => {
-                            console.log('weapon\'s price was not found');
+                        }).catch(err=>{
+                            console.log('weapon\'s picture was not found');
                             reject();
                         });
                     });                   

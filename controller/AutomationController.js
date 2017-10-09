@@ -48,11 +48,13 @@ function AutomationController(){
                         if(item.date === date){
                             if(!currentMinPrice){
                                 currentMinPrice = parseFloat(item.price);
+                                task.img = item.img;
                             }
                             if(currentMinPrice > parseFloat(item.price)){
                                 currentMinPrice = parseFloat(item.price);
+                                task.img = item.img;
                             }
-                            if( parseFloat(item.price) <= parseInt(task.maxPrice)){
+                            if( parseFloat(item.price) <= parseFloat(task.maxPrice)){
                                 let alertItem = {};
                                 alertItem.task = task;
                                 alertItem.item = item;
@@ -61,9 +63,11 @@ function AutomationController(){
                         }
                     });
                     if(currentMinPrice){
-                        task.currentMinPrice = currentMinPrice;
-                        taskDAO.update(task);
+                        task.currentMinPrice = parseFloat(currentMinPrice).toFixed(2);             
+                    }else{
+                        task.currentMinPrice = 'N/A';
                     }
+                    taskDAO.update(task);
                 }
             });
             if(alert_list.length > 0){

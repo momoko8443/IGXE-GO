@@ -38,6 +38,7 @@
                     <caption>任务列表</caption>
                     <thead>
                         <tr>
+                            <th></th>
                             <th>武器</th>
                             <th>关键字</th>
                             <th>稀有度</th>
@@ -52,6 +53,9 @@
                     </thead>
                     <tbody>
                         <tr uku-repeat="task in mainCtrl.tasks">
+                            <td>
+                                <img uku-src="task.img" style="width:50px;height:50px">
+                            </td>
                             <td>
                                 <a uku-href="task.url">{{task.weapon.name}}</a>
                             </td>
