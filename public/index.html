@@ -23,7 +23,6 @@
             <p>Automation tool for searching low price weapons from IGXE, for ZUSIDA&MOMOKO internal use only.</p>
         </div>
     </div>
-
     <div class="container">
         <div class="row">
             <div class="col-md-2 pull-right">
@@ -32,68 +31,147 @@
                 </a>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <table class="table table-hover">
-                    <caption>任务列表</caption>
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>武器</th>
-                            <th>关键字</th>
-                            <th>稀有度</th>
-                            <th>磨损值</th>
-                            <th>StatTrak</th>
-                            <th>印花</th>
-                            <th>警示价</th>
-                            <th>最低出售价</th>
-                            <th>最高求购价</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr uku-repeat="task in mainCtrl.tasks">
-                            <td>
-                                <img uku-src="task.img" style="width:50px;height:50px">
-                            </td>
-                            <td>
-                                <a uku-href="task.url">{{task.weapon.name}}</a>
-                            </td>
-                            <td>{{task.keyword}}</td>
-                            <td>{{task.rarity.name}}</td>
-                            <td>{{task.exterior.name}}</td>
-                            <td>{{task.isStatTrak ? '有':'无'}}</td>
-                            <td>{{task.isSticker ? '有':'无'}}</td>
-                            <td>{{task.maxPrice || ''}}</td>
-                            <td style="color:forestgreen">{{task.currentMinPrice || ''}}</td>
-                            <td style="color:coral">{{task.buyPrice || ''}}</td>
-                            <td>
-                                <a class="btn btn-default btn-sm" href="javascript:;" role="button" uku-render="parent.mainCtrl.iconStatus(task.isRunning)"
-                                    uku-onclick="parent.mainCtrl.runOrStopTask(task)">
-                                    <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-                                </a>
-                                <a class="btn btn-default btn-sm" href="javascript:;" role="button" uku-render="parent.mainCtrl.iconStatus(task.isRunning)"
-                                    uku-onclick="parent.mainCtrl.editWeapon(task)">
-                                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
-                                </a>
-                                <a class="btn btn-default btn-sm" href="javascript:;" role="button" uku-render="task.isRunning" uku-onclick="parent.mainCtrl.runOrStopTask(task)">
-                                    <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
-                                </a>
-                                <a class="btn btn-default btn-sm" href="javascript:;" role="button" uku-onclick="parent.mainCtrl.removeTask(task)">
-                                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-                                </a>
-
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#hot" aria-controls="hot" role="tab" data-toggle="tab">宠幸</a></li>
+            <li role="presentation"><a href="#cold" aria-controls="cold" role="tab" data-toggle="tab">冷宫</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="hot">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="table table-hover">
+                                <caption>任务列表</caption>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>武器</th>
+                                        <th>关键字</th>
+                                        <th>稀有度</th>
+                                        <th>磨损值</th>
+                                        <th>StatTrak</th>
+                                        <th>印花</th>
+                                        <th>警示价</th>
+                                        <th>最低出售价</th>
+                                        <th>最高求购价</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr uku-repeat="task in mainCtrl.tasks">
+                                        <td>
+                                            <img uku-src="task.img" style="width:50px;height:50px">
+                                        </td>
+                                        <td>
+                                            <a uku-href="task.url">{{task.weapon.name}}</a>
+                                        </td>
+                                        <td>{{task.keyword}}</td>
+                                        <td>{{task.rarity.name}}</td>
+                                        <td>{{task.exterior.name}}</td>
+                                        <td>{{task.isStatTrak ? '有':'无'}}</td>
+                                        <td>{{task.isSticker ? '有':'无'}}</td>
+                                        <td>{{task.maxPrice || ''}}</td>
+                                        <td style="color:forestgreen">{{task.currentMinPrice || ''}}</td>
+                                        <td style="color:coral">{{task.buyPrice || ''}}</td>
+                                        <td>
+                                            <a class="btn btn-default btn-sm" href="javascript:;" title="启动任务" role="button" uku-render="parent.mainCtrl.iconStatus(task.isRunning)"
+                                                uku-onclick="parent.mainCtrl.runOrStopTask(task)">
+                                                <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                                            </a>
+                                            <a class="btn btn-default btn-sm" href="javascript:;" title="修改任务" role="button" uku-render="parent.mainCtrl.iconStatus(task.isRunning)"
+                                                uku-onclick="parent.mainCtrl.editWeapon(task)">
+                                                <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                            </a>
+                                            <a class="btn btn-default btn-sm" href="javascript:;" title="暂停任务" role="button" uku-render="task.isRunning" uku-onclick="parent.mainCtrl.runOrStopTask(task)">
+                                                <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+                                            </a>
+                                            <a class="btn btn-default btn-sm" href="javascript:;" title="删除任务" role="button" uku-onclick="parent.mainCtrl.removeTask(task)">
+                                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                            </a> 
+                                            <a class="btn btn-default btn-sm" href="javascript:;" title="打入冷宫" role="button" uku-onclick="parent.mainCtrl.unlikeTask(task,false)">
+                                                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                                            </a>     
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div role="tabpanel" class="tab-pane" id="cold">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="table table-hover">
+                                <caption>任务列表</caption>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>武器</th>
+                                        <th>关键字</th>
+                                        <th>稀有度</th>
+                                        <th>磨损值</th>
+                                        <th>StatTrak</th>
+                                        <th>印花</th>
+                                        <th>警示价</th>
+                                        <th>最低出售价</th>
+                                        <th>最高求购价</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr uku-repeat="task in mainCtrl.unlikeTasks">
+                                        <td>
+                                            <img uku-src="task.img" style="width:50px;height:50px">
+                                        </td>
+                                        <td>
+                                            <a uku-href="task.url">{{task.weapon.name}}</a>
+                                        </td>
+                                        <td>{{task.keyword}}</td>
+                                        <td>{{task.rarity.name}}</td>
+                                        <td>{{task.exterior.name}}</td>
+                                        <td>{{task.isStatTrak ? '有':'无'}}</td>
+                                        <td>{{task.isSticker ? '有':'无'}}</td>
+                                        <td>{{task.maxPrice || ''}}</td>
+                                        <td style="color:forestgreen">{{task.currentMinPrice || ''}}</td>
+                                        <td style="color:coral">{{task.buyPrice || ''}}</td>
+                                        <td>
+                                            <a class="btn btn-default btn-sm" href="javascript:;" title="启动任务" role="button" uku-render="parent.mainCtrl.iconStatus(task.isRunning)"
+                                                uku-onclick="parent.mainCtrl.runOrStopTask(task)">
+                                                <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                                            </a>
+                                            <a class="btn btn-default btn-sm" href="javascript:;" title="修改任务" role="button" uku-render="parent.mainCtrl.iconStatus(task.isRunning)"
+                                                uku-onclick="parent.mainCtrl.editWeapon(task)">
+                                                <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                            </a>
+                                            <a class="btn btn-default btn-sm" href="javascript:;" title="暂停任务" role="button" uku-render="task.isRunning" uku-onclick="parent.mainCtrl.runOrStopTask(task)">
+                                                <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+                                            </a>
+                                            <a class="btn btn-default btn-sm" href="javascript:;" title="删除任务" role="button" uku-onclick="parent.mainCtrl.removeTask(task)">
+                                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                            </a> 
+                                            <a class="btn btn-default btn-sm" href="javascript:;" title="重新宠爱" role="button" uku-onclick="parent.mainCtrl.unlikeTask(task,true)">
+                                                <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                                            </a>     
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <footer>
+                <p>Powered by Ukulele.js</p>
+            </footer>
         </div>
-        <br>
-        <footer>
-            <p>Powered by Ukulele.js</p>
-        </footer>
     </div>
+
+    
+
+    
     <!-- /container -->
     <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
@@ -198,6 +276,7 @@
         this.currentTask.selectedOption_3 = {};
         this.currentTask.selectedChildOption = {};
         this.tasks = [];
+        this.unlikeTasks = [];
         this.init = function (data) {
             this.options = data.weapons;
             this.options_1 = data.rarities;
@@ -284,7 +363,15 @@
 
         this.getTasks = function () {
             $.get('/api/tasks', function (tasks) {
-                self.tasks = tasks;
+                self.tasks = [];
+                self.unlikeTasks = [];
+                tasks.forEach(function(task){
+                    if(task.category === "unlike"){
+                        self.unlikeTasks.push(task);
+                    }else{
+                        self.tasks.push(task);
+                    }
+                });
                 uku.refresh('mainCtrl');
             })
         };
@@ -387,6 +474,28 @@
         this.updateTask = function() {
             var isUpdate = true;
             this.createTask(null,isUpdate);
+        };
+
+        this.unlikeTask = function(e,task,like) {
+            var method = 'PUT';
+            var url = '/api/tasks/' + task._id;
+            if(!like){
+                task.category = "unlike";
+            }else{
+                task.category = "";
+            }
+            
+            $.ajax({
+                url: url,
+                method: method,
+                headers: {
+                    'content-type': 'application/json'
+                },
+                data: JSON.stringify(task),
+                success: function () {
+                    self.getTasks();
+                }
+            });
         };
     }
 
