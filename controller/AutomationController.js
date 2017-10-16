@@ -13,7 +13,12 @@ function AutomationController(){
             return '0';
         }
     }
+    let isRunning = false;
     this.run = function(){
+        if(isRunning){
+            return;
+        }
+        isRunning = true;
         let tasks = taskDAO.findAllRunning();
         let _tasks = [];
         tasks.forEach(function(task) {
@@ -87,8 +92,10 @@ function AutomationController(){
                 });
                 mailSender.send(mailPool);
             } 
+            isRunning = false;
         }).catch( err =>{
             console.error('execute automation failed');
+            isRunning = false;
         });
     };
 }
